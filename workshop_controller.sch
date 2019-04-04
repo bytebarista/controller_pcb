@@ -20,7 +20,7 @@ U 1 1 5C5F462B
 P 4750 3300
 F 0 "J1" H 4800 3917 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4800 3826 50  0000 C CNN
-F 2 "" H 4750 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 4750 3300 50  0001 C CNN
 F 3 "~" H 4750 3300 50  0001 C CNN
 	1    4750 3300
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5C5F4734
 P 7000 3300
 F 0 "J2" H 7050 3917 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 7050 3826 50  0000 C CNN
-F 2 "" H 7000 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 7000 3300 50  0001 C CNN
 F 3 "~" H 7000 3300 50  0001 C CNN
 	1    7000 3300
 	1    0    0    -1  
@@ -158,8 +158,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 3000 7300 3000
 Wire Wire Line
-	7300 3100 7450 3100
-Wire Wire Line
 	7450 3200 7300 3200
 Wire Wire Line
 	7300 3300 7450 3300
@@ -179,12 +177,6 @@ Wire Wire Line
 	5050 3700 5200 3700
 Wire Wire Line
 	5200 3500 5050 3500
-Wire Wire Line
-	5050 3400 5200 3400
-Wire Wire Line
-	5200 3300 5050 3300
-Wire Wire Line
-	5050 3200 5200 3200
 Wire Wire Line
 	4400 3200 4550 3200
 Wire Wire Line
@@ -238,23 +230,23 @@ Wire Wire Line
 $Comp
 L Sensor_Motion:MPU-9250 U1
 U 1 1 5CA64D58
-P 5900 5600
-F 0 "U1" H 5900 4614 50  0000 C CNN
-F 1 "MPU-9250" H 5900 4523 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5900 4600 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 5900 5450 50  0001 C CNN
-	1    5900 5600
+P 6800 5650
+F 0 "U1" H 6800 4664 50  0000 C CNN
+F 1 "MPU-9250" H 6800 4573 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 6800 4650 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 6800 5500 50  0001 C CNN
+	1    6800 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sensor:BME280 U2
 U 1 1 5CA64E9A
-P 3850 5400
-F 0 "U2" H 3420 5446 50  0000 R CNN
-F 1 "BME280" H 3420 5355 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 3850 5200 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 3850 5200 50  0001 C CNN
-	1    3850 5400
+P 4600 4800
+F 0 "U2" H 4170 4846 50  0000 R CNN
+F 1 "BME280" H 4170 4755 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 4600 4600 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 4600 4600 50  0001 C CNN
+	1    4600 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -282,67 +274,206 @@ $EndComp
 $Comp
 L Connector:AudioJack3 J3
 U 1 1 5CA656CD
-P 2350 6300
-F 0 "J3" H 2330 6625 50  0000 C CNN
-F 1 "AudioJack3" H 2330 6534 50  0000 C CNN
-F 2 "" H 2350 6300 50  0001 C CNN
-F 3 "~" H 2350 6300 50  0001 C CNN
-	1    2350 6300
+P 6600 1200
+F 0 "J3" H 6580 1525 50  0000 C CNN
+F 1 "AudioJack3" H 6580 1434 50  0000 C CNN
+F 2 "" H 6600 1200 50  0001 C CNN
+F 3 "~" H 6600 1200 50  0001 C CNN
+	1    6600 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT_Dual RV1
+L Device:R_POT_Dual JOYSTICK_LEFT1
 U 1 1 5CA65DAB
-P 2500 3800
-F 0 "RV1" H 2500 3568 50  0000 C CNN
-F 1 "R_POT_Dual" H 2500 3477 50  0000 C CNN
-F 2 "" H 2750 3725 50  0001 C CNN
-F 3 "~" H 2750 3725 50  0001 C CNN
-	1    2500 3800
+P 4750 1600
+F 0 "JOYSTICK_LEFT1" H 4750 1368 50  0000 C CNN
+F 1 "R_POT_Dual" H 4750 1277 50  0000 C CNN
+F 2 "" H 5000 1525 50  0001 C CNN
+F 3 "~" H 5000 1525 50  0001 C CNN
+	1    4750 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Speaker LS1
 U 1 1 5CA66A12
-P 5800 1650
-F 0 "LS1" H 5970 1646 50  0000 L CNN
-F 1 "Speaker" H 5970 1555 50  0000 L CNN
-F 2 "" H 5800 1450 50  0001 C CNN
-F 3 "~" H 5790 1600 50  0001 C CNN
-	1    5800 1650
+P 5550 1150
+F 0 "LS1" H 5720 1146 50  0000 L CNN
+F 1 "Speaker" H 5720 1055 50  0000 L CNN
+F 2 "" H 5550 950 50  0001 C CNN
+F 3 "~" H 5540 1100 50  0001 C CNN
+	1    5550 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Microphone MK1
 U 1 1 5CA66C89
-P 4600 1700
-F 0 "MK1" H 4730 1746 50  0000 L CNN
-F 1 "Microphone" H 4730 1655 50  0000 L CNN
-F 2 "" V 4600 1800 50  0001 C CNN
-F 3 "~" V 4600 1800 50  0001 C CNN
-	1    4600 1700
+P 4700 1200
+F 0 "MK1" H 4830 1246 50  0000 L CNN
+F 1 "Microphone" H 4830 1155 50  0000 L CNN
+F 2 "" V 4700 1300 50  0001 C CNN
+F 3 "~" V 4700 1300 50  0001 C CNN
+	1    4700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4900 5750 4900
+Wire Wire Line
+	5850 4900 5850 3300
+Wire Wire Line
+	5050 3300 5850 3300
+Wire Wire Line
+	5800 3400 5800 4500
+Wire Wire Line
+	5800 4500 5200 4500
+Wire Wire Line
+	5050 3400 5800 3400
+Wire Wire Line
+	5900 3200 5900 4700
+Wire Wire Line
+	5900 4700 5650 4700
+Wire Wire Line
+	5050 3200 5900 3200
+Wire Wire Line
+	5800 4500 5800 5350
+Wire Wire Line
+	5800 5350 5900 5350
+Connection ~ 5800 4500
+Wire Wire Line
+	5750 4900 5750 5450
+Wire Wire Line
+	5750 5450 6000 5450
+Connection ~ 5750 4900
+Wire Wire Line
+	5750 4900 5850 4900
+Wire Wire Line
+	5650 4700 5650 5550
+Wire Wire Line
+	5650 5550 5950 5550
+Connection ~ 5650 4700
+Wire Wire Line
+	5650 4700 5200 4700
+$Comp
+L Connector:Conn_01x06_Male MICRO_SD1
+U 1 1 5CA73B79
+P 5200 6100
+F 0 "MICRO_SD1" H 5306 6478 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5306 6387 50  0000 C CNN
+F 2 "" H 5200 6100 50  0001 C CNN
+F 3 "~" H 5200 6100 50  0001 C CNN
+	1    5200 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6100 5900 6100
+Wire Wire Line
+	5900 6100 5900 5350
+Connection ~ 5900 5350
+Wire Wire Line
+	5900 5350 6100 5350
+Wire Wire Line
+	5400 6200 5950 6200
+Wire Wire Line
+	5950 6200 5950 5550
+Connection ~ 5950 5550
+Wire Wire Line
+	5950 5550 6100 5550
+Wire Wire Line
+	5400 6300 6000 6300
+Wire Wire Line
+	6000 6300 6000 5450
+Connection ~ 6000 5450
+Wire Wire Line
+	6000 5450 6100 5450
+$Comp
+L power:GND #PWR0106
+U 1 1 5CA782C2
+P 5550 6650
+F 0 "#PWR0106" H 5550 6400 50  0001 C CNN
+F 1 "GND" H 5555 6477 50  0000 C CNN
+F 2 "" H 5550 6650 50  0001 C CNN
+F 3 "" H 5550 6650 50  0001 C CNN
+	1    5550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6400 5550 6400
+Wire Wire Line
+	5550 6400 5550 6450
+Wire Wire Line
+	5450 5550 5450 5900
+Wire Wire Line
+	5450 5900 5400 5900
+Wire Wire Line
+	4700 5400 4700 6450
+Wire Wire Line
+	4700 6450 5550 6450
+Connection ~ 5550 6450
+Wire Wire Line
+	5550 6450 5550 6500
+Wire Wire Line
+	4500 5400 4500 6500
+Wire Wire Line
+	4500 6500 5550 6500
+Connection ~ 5550 6500
+Wire Wire Line
+	4900 4300 4800 4300
+Wire Wire Line
+	4800 4300 4800 4200
+Wire Wire Line
+	4800 4200 4700 4200
+Wire Wire Line
+	7300 3100 7450 3100
+Wire Wire Line
+	6900 4750 6900 4550
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5CA89BB7
+P 4900 4300
+F 0 "#PWR0107" H 4900 4150 50  0001 C CNN
+F 1 "+3V3" H 4915 4473 50  0000 C CNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "" H 4900 4300 50  0001 C CNN
+	1    4900 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Micro_SD_Card_Det J4
-U 1 1 5CA66F96
-P 8800 5150
-F 0 "J4" H 8750 5967 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 8750 5876 50  0000 C CNN
-F 2 "" H 10850 5850 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 8800 5250 50  0001 C CNN
-	1    8800 5150
+L power:+3V3 #PWR0108
+U 1 1 5CA89CBB
+P 6900 4550
+F 0 "#PWR0108" H 6900 4400 50  0001 C CNN
+F 1 "+3V3" H 6915 4723 50  0000 C CNN
+F 2 "" H 6900 4550 50  0001 C CNN
+F 3 "" H 6900 4550 50  0001 C CNN
+	1    6900 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery BT?
-U 1 1 5CA68FEC
-P 3100 2400
-F 0 "BT?" H 3208 2446 50  0000 L CNN
-F 1 "Battery" H 3208 2355 50  0000 L CNN
-F 2 "" V 3100 2460 50  0001 C CNN
-F 3 "~" V 3100 2460 50  0001 C CNN
-	1    3100 2400
+L power:+3V3 #PWR0109
+U 1 1 5CA89DB9
+P 5450 5550
+F 0 "#PWR0109" H 5450 5400 50  0001 C CNN
+F 1 "+3V3" H 5465 5723 50  0000 C CNN
+F 2 "" H 5450 5550 50  0001 C CNN
+F 3 "" H 5450 5550 50  0001 C CNN
+	1    5450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6500 5550 6550
+Wire Wire Line
+	6800 6550 5550 6550
+Connection ~ 5550 6550
+Wire Wire Line
+	5550 6550 5550 6650
+$Comp
+L Interface_Expansion:MCP23S17_SS U3
+U 1 1 5CA69BB7
+P 10150 3550
+F 0 "U3" H 10150 4828 50  0000 C CNN
+F 1 "MCP23S17_SS" H 10150 4737 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 10350 2550 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 10350 2450 50  0001 L CNN
+	1    10150 3550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
