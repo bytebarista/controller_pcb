@@ -156,8 +156,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 2900 6800 2900
 Wire Wire Line
-	7450 3000 7300 3000
-Wire Wire Line
 	7450 3200 7300 3200
 Wire Wire Line
 	7300 3300 7450 3300
@@ -176,15 +174,11 @@ Wire Wire Line
 Wire Wire Line
 	5050 3700 5200 3700
 Wire Wire Line
-	5200 3500 5050 3500
-Wire Wire Line
 	4400 3200 4550 3200
 Wire Wire Line
 	4400 3300 4550 3300
 Wire Wire Line
 	4550 3400 4400 3400
-Wire Wire Line
-	4400 3500 4550 3500
 Wire Wire Line
 	4550 3700 4400 3700
 Wire Wire Line
@@ -230,45 +224,45 @@ Wire Wire Line
 $Comp
 L Sensor_Motion:MPU-9250 U1
 U 1 1 5CA64D58
-P 6800 5650
-F 0 "U1" H 6800 4664 50  0000 C CNN
-F 1 "MPU-9250" H 6800 4573 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 6800 4650 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 6800 5500 50  0001 C CNN
-	1    6800 5650
+P 8700 5350
+F 0 "U1" H 8700 4364 50  0000 C CNN
+F 1 "MPU-9250" H 8700 4273 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 8700 4350 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 8700 5200 50  0001 C CNN
+	1    8700 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sensor:BME280 U2
 U 1 1 5CA64E9A
-P 4600 4800
-F 0 "U2" H 4170 4846 50  0000 R CNN
-F 1 "BME280" H 4170 4755 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 4600 4600 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 4600 4600 50  0001 C CNN
-	1    4600 4800
+P 7000 5300
+F 0 "U2" H 6570 5346 50  0000 R CNN
+F 1 "BME280" H 6570 5255 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7000 5100 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 7000 5100 50  0001 C CNN
+	1    7000 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5CA65465
-P 9150 1700
-F 0 "SW1" H 9150 1985 50  0000 C CNN
-F 1 "SW_Push" H 9150 1894 50  0000 C CNN
-F 2 "" H 9150 1900 50  0001 C CNN
-F 3 "" H 9150 1900 50  0001 C CNN
-	1    9150 1700
+P 5350 4150
+F 0 "SW1" H 5350 4435 50  0000 C CNN
+F 1 "SW_Push" H 5350 4344 50  0000 C CNN
+F 2 "" H 5350 4350 50  0001 C CNN
+F 3 "" H 5350 4350 50  0001 C CNN
+	1    5350 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5CA6551B
-P 9150 2300
-F 0 "SW2" H 9150 2585 50  0000 C CNN
-F 1 "SW_Push" H 9150 2494 50  0000 C CNN
-F 2 "" H 9150 2500 50  0001 C CNN
-F 3 "" H 9150 2500 50  0001 C CNN
-	1    9150 2300
+P 3600 3500
+F 0 "SW2" H 3600 3785 50  0000 C CNN
+F 1 "SW_Push" H 3600 3694 50  0000 C CNN
+F 2 "" H 3600 3700 50  0001 C CNN
+F 3 "" H 3600 3700 50  0001 C CNN
+	1    3600 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -316,15 +310,9 @@ F 3 "~" V 4700 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 4900 5750 4900
-Wire Wire Line
 	5850 4900 5850 3300
 Wire Wire Line
 	5050 3300 5850 3300
-Wire Wire Line
-	5800 3400 5800 4500
-Wire Wire Line
-	5800 4500 5200 4500
 Wire Wire Line
 	5050 3400 5800 3400
 Wire Wire Line
@@ -334,24 +322,17 @@ Wire Wire Line
 Wire Wire Line
 	5050 3200 5900 3200
 Wire Wire Line
-	5800 4500 5800 5350
-Wire Wire Line
 	5800 5350 5900 5350
-Connection ~ 5800 4500
 Wire Wire Line
 	5750 4900 5750 5450
 Wire Wire Line
 	5750 5450 6000 5450
-Connection ~ 5750 4900
 Wire Wire Line
 	5750 4900 5850 4900
 Wire Wire Line
 	5650 4700 5650 5550
 Wire Wire Line
 	5650 5550 5950 5550
-Connection ~ 5650 4700
-Wire Wire Line
-	5650 4700 5200 4700
 $Comp
 L Connector:Conn_01x06_Male MICRO_SD1
 U 1 1 5CA73B79
@@ -364,26 +345,17 @@ F 3 "~" H 5200 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 6100 5900 6100
+	5400 6100 5550 6100
 Wire Wire Line
 	5900 6100 5900 5350
-Connection ~ 5900 5350
 Wire Wire Line
-	5900 5350 6100 5350
-Wire Wire Line
-	5400 6200 5950 6200
+	5400 6200 5550 6200
 Wire Wire Line
 	5950 6200 5950 5550
-Connection ~ 5950 5550
 Wire Wire Line
-	5950 5550 6100 5550
-Wire Wire Line
-	5400 6300 6000 6300
+	5400 6300 5550 6300
 Wire Wire Line
 	6000 6300 6000 5450
-Connection ~ 6000 5450
-Wire Wire Line
-	6000 5450 6100 5450
 $Comp
 L power:GND #PWR0106
 U 1 1 5CA782C2
@@ -398,53 +370,18 @@ $EndComp
 Wire Wire Line
 	5400 6400 5550 6400
 Wire Wire Line
-	5550 6400 5550 6450
-Wire Wire Line
 	5450 5550 5450 5900
 Wire Wire Line
 	5450 5900 5400 5900
-Wire Wire Line
-	4700 5400 4700 6450
-Wire Wire Line
-	4700 6450 5550 6450
-Connection ~ 5550 6450
-Wire Wire Line
-	5550 6450 5550 6500
-Wire Wire Line
-	4500 5400 4500 6500
-Wire Wire Line
-	4500 6500 5550 6500
-Connection ~ 5550 6500
-Wire Wire Line
-	4900 4300 4800 4300
-Wire Wire Line
-	4800 4300 4800 4200
-Wire Wire Line
-	4800 4200 4700 4200
-Wire Wire Line
-	7300 3100 7450 3100
-Wire Wire Line
-	6900 4750 6900 4550
-$Comp
-L power:+3V3 #PWR0107
-U 1 1 5CA89BB7
-P 4900 4300
-F 0 "#PWR0107" H 4900 4150 50  0001 C CNN
-F 1 "+3V3" H 4915 4473 50  0000 C CNN
-F 2 "" H 4900 4300 50  0001 C CNN
-F 3 "" H 4900 4300 50  0001 C CNN
-	1    4900 4300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR0108
 U 1 1 5CA89CBB
-P 6900 4550
-F 0 "#PWR0108" H 6900 4400 50  0001 C CNN
-F 1 "+3V3" H 6915 4723 50  0000 C CNN
-F 2 "" H 6900 4550 50  0001 C CNN
-F 3 "" H 6900 4550 50  0001 C CNN
-	1    6900 4550
+P 8800 4450
+F 0 "#PWR0108" H 8800 4300 50  0001 C CNN
+F 1 "+3V3" H 8815 4623 50  0000 C CNN
+F 2 "" H 8800 4450 50  0001 C CNN
+F 3 "" H 8800 4450 50  0001 C CNN
+	1    8800 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -458,13 +395,6 @@ F 3 "" H 5450 5550 50  0001 C CNN
 	1    5450 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 6500 5550 6550
-Wire Wire Line
-	6800 6550 5550 6550
-Connection ~ 5550 6550
-Wire Wire Line
-	5550 6550 5550 6650
 $Comp
 L Interface_Expansion:MCP23S17_SS U3
 U 1 1 5CA69BB7
@@ -476,4 +406,124 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 10350 2450
 	1    10150 3550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5050 3500 5600 3500
+Wire Wire Line
+	5600 3500 5600 4150
+Wire Wire Line
+	5600 4150 5550 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5CA77F28
+P 5150 4150
+F 0 "#PWR?" H 5150 3900 50  0001 C CNN
+F 1 "GND" H 5155 3977 50  0000 C CNN
+F 2 "" H 5150 4150 50  0001 C CNN
+F 3 "" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3500 4550 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5CA7A5D4
+P 3400 3500
+F 0 "#PWR?" H 3400 3250 50  0001 C CNN
+F 1 "GND" H 3405 3327 50  0000 C CNN
+F 2 "" H 3400 3500 50  0001 C CNN
+F 3 "" H 3400 3500 50  0001 C CNN
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female SPI_HEADER
+U 1 1 5CA7AA74
+P 5750 6100
+F 0 "SPI_HEADER" H 5777 6076 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 5777 5985 50  0000 L CNN
+F 2 "" H 5750 6100 50  0001 C CNN
+F 3 "~" H 5750 6100 50  0001 C CNN
+	1    5750 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 6100
+Wire Wire Line
+	5550 6100 5900 6100
+Connection ~ 5550 6200
+Wire Wire Line
+	5550 6200 5950 6200
+Connection ~ 5550 6300
+Wire Wire Line
+	5550 6300 6000 6300
+Connection ~ 5550 6400
+Wire Wire Line
+	5550 5900 5450 5900
+Connection ~ 5450 5900
+Wire Wire Line
+	8000 3100 8000 4950
+Wire Wire Line
+	7300 3100 8000 3100
+Wire Wire Line
+	7950 3000 7950 5200
+Wire Wire Line
+	7950 5250 8000 5250
+Wire Wire Line
+	7300 3000 7950 3000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CA917C5
+P 7100 4700
+F 0 "#PWR?" H 7100 4550 50  0001 C CNN
+F 1 "+3V3" H 7115 4873 50  0000 C CNN
+F 2 "" H 7100 4700 50  0001 C CNN
+F 3 "" H 7100 4700 50  0001 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5200 7950 5200
+Connection ~ 7950 5200
+Wire Wire Line
+	7950 5200 7950 5250
+Wire Wire Line
+	7600 5400 7800 5400
+Wire Wire Line
+	7800 5400 7800 4950
+Wire Wire Line
+	7800 4950 8000 4950
+Connection ~ 8000 4950
+Wire Wire Line
+	8000 4950 8000 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAD4CB
+P 7700 6150
+F 0 "#PWR?" H 7700 5900 50  0001 C CNN
+F 1 "GND" H 7705 5977 50  0000 C CNN
+F 2 "" H 7700 6150 50  0001 C CNN
+F 3 "" H 7700 6150 50  0001 C CNN
+	1    7700 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5900 7700 5900
+Wire Wire Line
+	7700 5900 7700 6100
+Wire Wire Line
+	6900 5900 7100 5900
+Connection ~ 7100 5900
+Wire Wire Line
+	8700 6250 7950 6250
+Wire Wire Line
+	7950 6250 7950 6100
+Wire Wire Line
+	7950 6100 7700 6100
+Connection ~ 7700 6100
+Wire Wire Line
+	7700 6100 7700 6150
+Wire Wire Line
+	5550 6400 5550 6650
+Wire Wire Line
+	5800 3400 5800 5350
 $EndSCHEMATC
