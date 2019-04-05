@@ -310,29 +310,7 @@ F 3 "~" V 4700 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 4900 5850 3300
-Wire Wire Line
-	5050 3300 5850 3300
-Wire Wire Line
 	5050 3400 5800 3400
-Wire Wire Line
-	5900 3200 5900 4700
-Wire Wire Line
-	5900 4700 5650 4700
-Wire Wire Line
-	5050 3200 5900 3200
-Wire Wire Line
-	5800 5350 5900 5350
-Wire Wire Line
-	5750 4900 5750 5150
-Wire Wire Line
-	5750 5450 6000 5450
-Wire Wire Line
-	5750 4900 5850 4900
-Wire Wire Line
-	5650 4700 5650 5050
-Wire Wire Line
-	5650 5550 5950 5550
 $Comp
 L Connector:Conn_01x06_Male MICRO_SD1
 U 1 1 5CA73B79
@@ -347,15 +325,7 @@ $EndComp
 Wire Wire Line
 	5400 6100 5550 6100
 Wire Wire Line
-	5900 6100 5900 5350
-Wire Wire Line
-	5400 6200 5550 6200
-Wire Wire Line
-	5950 6200 5950 5550
-Wire Wire Line
 	5400 6300 5550 6300
-Wire Wire Line
-	6000 6300 6000 5450
 $Comp
 L power:GND #PWR0106
 U 1 1 5CA782C2
@@ -369,8 +339,6 @@ F 3 "" H 5550 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 6400 5550 6400
-Wire Wire Line
-	5450 5550 5450 5600
 Wire Wire Line
 	5450 5900 5400 5900
 $Comp
@@ -447,15 +415,6 @@ F 3 "~" H 5750 6100 50  0001 C CNN
 	1    5750 6100
 	1    0    0    -1  
 $EndComp
-Connection ~ 5550 6100
-Wire Wire Line
-	5550 6100 5900 6100
-Connection ~ 5550 6200
-Wire Wire Line
-	5550 6200 5950 6200
-Connection ~ 5550 6300
-Wire Wire Line
-	5550 6300 6000 6300
 Connection ~ 5550 6400
 Wire Wire Line
 	5550 5900 5450 5900
@@ -522,50 +481,123 @@ Wire Wire Line
 Connection ~ 7700 6100
 Wire Wire Line
 	7700 6100 7700 6150
-Wire Wire Line
-	5550 6400 5550 6550
 $Comp
-L Connector_Generic:Conn_01x08 J4
-U 1 1 5CA73EBA
-P 4750 5150
-F 0 "J4" H 4670 4525 50  0000 C CNN
-F 1 "Conn_01x08" H 4670 4616 50  0000 C CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-50S-0.5SH_1x50-1MP_P0.50mm_Horizontal" H 4750 5150 50  0001 C CNN
-F 3 "~" H 4750 5150 50  0001 C CNN
-	1    4750 5150
-	-1   0    0    1   
+L Connector_Generic:Conn_02x25_Odd_Even J5
+U 1 1 5CA81708
+P 3100 5700
+F 0 "J5" H 3150 7117 50  0000 C CNN
+F 1 "Conn_02x25_Odd_Even" H 3150 7026 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-50S-0.5SH_1x50-1MP_P0.50mm_Horizontal" H 3100 5700 50  0001 C CNN
+F 3 "~" H 3100 5700 50  0001 C CNN
+	1    3100 5700
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 5050 5650 5050
-Connection ~ 5650 5050
+	5450 5550 5450 5900
 Wire Wire Line
-	5650 5050 5650 5550
+	5550 6400 5550 6600
+Text Label 3400 4900 0    50   ~ 0
+PIN_RESET
+Text Label 2900 6100 2    50   ~ 0
+PIN_SDO
+Text Label 3400 6100 0    50   ~ 0
+PIN_SDI
+Text Label 3400 6300 0    50   ~ 0
+PIN_CS
+Text Label 2900 6300 2    50   ~ 0
+PIN_SCL
+Text Label 2900 6600 2    50   ~ 0
+GND
+Text Label 3400 6800 0    50   ~ 0
+GND
+Text Label 3400 6900 0    50   ~ 0
+GND
+Text Label 2900 6900 2    50   ~ 0
+GND
+Text Label 3400 6500 0    50   ~ 0
+PIN_VCI
 Wire Wire Line
-	4950 5150 5750 5150
-Connection ~ 5750 5150
+	5050 3300 5850 3300
 Wire Wire Line
-	5750 5150 5750 5450
+	5800 6100 5550 6100
 Wire Wire Line
-	4950 5250 5800 5250
+	5800 3400 5800 5100
+Connection ~ 5550 6100
 Wire Wire Line
-	5800 3400 5800 5250
-Connection ~ 5800 5250
+	5400 6200 5550 6200
 Wire Wire Line
-	5800 5250 5800 5350
+	5550 6200 5900 6200
+Connection ~ 5550 6200
 Wire Wire Line
-	4950 5350 5300 5350
+	5050 3200 5900 3200
 Wire Wire Line
-	5300 5350 5300 5600
+	5900 3200 5900 5200
 Wire Wire Line
-	5300 5600 5450 5600
-Connection ~ 5450 5600
+	5850 6300 5550 6300
 Wire Wire Line
-	5450 5600 5450 5900
+	5850 3300 5850 5150
+Connection ~ 5550 6300
 Wire Wire Line
-	4950 5450 4950 6550
+	3400 6100 4600 6100
 Wire Wire Line
-	4950 6550 5550 6550
-Connection ~ 5550 6550
+	4600 6100 4600 5150
 Wire Wire Line
-	5550 6550 5550 6650
+	4600 5150 5850 5150
+Connection ~ 5850 5150
+Wire Wire Line
+	5850 5150 5850 6300
+Wire Wire Line
+	2900 6100 2900 6050
+Wire Wire Line
+	2900 6050 4550 6050
+Wire Wire Line
+	4550 6050 4550 5100
+Wire Wire Line
+	4550 5100 5800 5100
+Connection ~ 5800 5100
+Wire Wire Line
+	5800 5100 5800 6100
+Wire Wire Line
+	2900 6300 2900 6250
+Wire Wire Line
+	2900 6250 4650 6250
+Wire Wire Line
+	4650 6250 4650 5200
+Wire Wire Line
+	4650 5200 5900 5200
+Connection ~ 5900 5200
+Wire Wire Line
+	5900 5200 5900 6200
+Wire Wire Line
+	3400 6800 3800 6800
+Wire Wire Line
+	5000 6800 5000 6600
+Wire Wire Line
+	5000 6600 5550 6600
+Connection ~ 5550 6600
+Wire Wire Line
+	5550 6600 5550 6650
+Wire Wire Line
+	3400 6900 3550 6900
+Wire Wire Line
+	3800 6900 3800 6800
+Connection ~ 3800 6800
+Wire Wire Line
+	3800 6800 5000 6800
+Wire Wire Line
+	2900 6900 2900 7000
+Wire Wire Line
+	2900 7000 3550 7000
+Wire Wire Line
+	3550 7000 3550 6900
+Connection ~ 3550 6900
+Wire Wire Line
+	3550 6900 3800 6900
+Wire Wire Line
+	2900 6600 2750 6600
+Wire Wire Line
+	2750 6600 2750 7000
+Wire Wire Line
+	2750 7000 2900 7000
+Connection ~ 2900 7000
 $EndSCHEMATC
