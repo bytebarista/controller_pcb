@@ -312,21 +312,6 @@ $EndComp
 Wire Wire Line
 	5050 3400 5800 3400
 $Comp
-L Connector:Conn_01x06_Male MICRO_SD1
-U 1 1 5CA73B79
-P 5200 6100
-F 0 "MICRO_SD1" H 5306 6478 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 5306 6387 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5200 6100 50  0001 C CNN
-F 3 "~" H 5200 6100 50  0001 C CNN
-	1    5200 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 6100 5550 6100
-Wire Wire Line
-	5400 6300 5550 6300
-$Comp
 L power:GND #PWR0106
 U 1 1 5CA782C2
 P 5550 6650
@@ -337,20 +322,16 @@ F 3 "" H 5550 6650 50  0001 C CNN
 	1    5550 6650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 6400 5550 6400
-Wire Wire Line
-	5450 5900 5400 5900
 $Comp
 L power:+3V3 #PWR0108
 U 1 1 5CA89CBB
-P 8800 4450
-F 0 "#PWR0108" H 8800 4300 50  0001 C CNN
-F 1 "+3V3" H 8815 4623 50  0000 C CNN
-F 2 "" H 8800 4450 50  0001 C CNN
-F 3 "" H 8800 4450 50  0001 C CNN
-	1    8800 4450
-	1    0    0    -1  
+P 8400 4400
+F 0 "#PWR0108" H 8400 4250 50  0001 C CNN
+F 1 "+3V3" H 8415 4573 50  0000 C CNN
+F 2 "" H 8400 4400 50  0001 C CNN
+F 3 "" H 8400 4400 50  0001 C CNN
+	1    8400 4400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0109
@@ -415,10 +396,8 @@ F 3 "~" H 5750 6100 50  0001 C CNN
 	1    5750 6100
 	1    0    0    -1  
 $EndComp
-Connection ~ 5550 6400
 Wire Wire Line
 	5550 5900 5450 5900
-Connection ~ 5450 5900
 Wire Wire Line
 	8000 3100 8000 4950
 Wire Wire Line
@@ -522,12 +501,8 @@ Wire Wire Line
 	5800 6100 5550 6100
 Wire Wire Line
 	5800 3400 5800 5100
-Connection ~ 5550 6100
-Wire Wire Line
-	5400 6200 5550 6200
 Wire Wire Line
 	5550 6200 5900 6200
-Connection ~ 5550 6200
 Wire Wire Line
 	5050 3200 5900 3200
 Wire Wire Line
@@ -536,7 +511,6 @@ Wire Wire Line
 	5850 6300 5550 6300
 Wire Wire Line
 	5850 3300 5850 5150
-Connection ~ 5550 6300
 Wire Wire Line
 	3400 6100 4600 6100
 Wire Wire Line
@@ -600,4 +574,191 @@ Wire Wire Line
 Wire Wire Line
 	2750 7000 2900 7000
 Connection ~ 2900 7000
+$Comp
+L Amplifier_Audio:LM4990MM U4
+U 1 1 5CAD7DF6
+P 5950 1850
+F 0 "U4" H 6291 1896 50  0000 L CNN
+F 1 "LM4990MM" H 6291 1805 50  0000 L CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 5950 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4990.pdf" H 5950 1850 50  0001 C CNN
+	1    5950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Micro_SD_Card_Det J4
+U 1 1 5CA9E3F4
+P 8550 1850
+F 0 "J4" H 8500 2667 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 8500 2576 50  0000 C CNN
+F 2 "" H 10600 2550 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 8550 1950 50  0001 C CNN
+	1    8550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small 0.1uF1
+U 1 1 5CAAB507
+P 8800 4200
+F 0 "0.1uF1" H 8892 4246 50  0000 L CNN
+F 1 "C_Small" H 8892 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 4200 50  0001 C CNN
+F 3 "~" H 8800 4200 50  0001 C CNN
+	1    8800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small 10nF1
+U 1 1 5CAAB5AB
+P 8600 4200
+F 0 "10nF1" H 8692 4246 50  0000 L CNN
+F 1 "C_Small" H 8692 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8600 4200 50  0001 C CNN
+F 3 "~" H 8600 4200 50  0001 C CNN
+	1    8600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5CAAE80D
+P 8400 4000
+F 0 "#PWR0113" H 8400 3750 50  0001 C CNN
+F 1 "GND" V 8405 3872 50  0000 R CNN
+F 2 "" H 8400 4000 50  0001 C CNN
+F 3 "" H 8400 4000 50  0001 C CNN
+	1    8400 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 4100 8600 4000
+Wire Wire Line
+	8600 4000 8400 4000
+Wire Wire Line
+	8800 4100 8800 4000
+Wire Wire Line
+	8800 4000 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	8800 4300 8800 4400
+Wire Wire Line
+	8600 4450 8600 4400
+Wire Wire Line
+	8600 4400 8400 4400
+Connection ~ 8600 4400
+Wire Wire Line
+	8600 4400 8600 4300
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 5CAD51B3
+P 9000 4400
+F 0 "#PWR0114" H 9000 4250 50  0001 C CNN
+F 1 "+3V3" V 9015 4528 50  0000 L CNN
+F 2 "" H 9000 4400 50  0001 C CNN
+F 3 "" H 9000 4400 50  0001 C CNN
+	1    9000 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4400 9000 4400
+Connection ~ 8800 4400
+Wire Wire Line
+	8800 4400 8800 4450
+$Comp
+L Device:C_Small 0.1uF2
+U 1 1 5CAD8E6E
+P 9500 5550
+F 0 "0.1uF2" V 9271 5550 50  0000 C CNN
+F 1 "C_Small" V 9362 5550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 5550 50  0001 C CNN
+F 3 "~" H 9500 5550 50  0001 C CNN
+	1    9500 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5CAD8F77
+P 9800 5550
+F 0 "#PWR0115" H 9800 5300 50  0001 C CNN
+F 1 "GND" V 9805 5422 50  0000 R CNN
+F 2 "" H 9800 5550 50  0001 C CNN
+F 3 "" H 9800 5550 50  0001 C CNN
+	1    9800 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 5550 9700 5550
+Wire Wire Line
+	9400 5750 9700 5750
+Wire Wire Line
+	9700 5750 9700 5550
+Connection ~ 9700 5550
+Wire Wire Line
+	9700 5550 9800 5550
+Wire Wire Line
+	8000 5550 7850 5550
+Wire Wire Line
+	7700 5550 7700 5900
+Connection ~ 7700 5900
+$Comp
+L power:+3V3 #PWR0116
+U 1 1 5CAF1926
+P 9500 5900
+F 0 "#PWR0116" H 9500 5750 50  0001 C CNN
+F 1 "+3V3" H 9515 6073 50  0000 C CNN
+F 2 "" H 9500 5900 50  0001 C CNN
+F 3 "" H 9500 5900 50  0001 C CNN
+	1    9500 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 5650 9500 5650
+Wire Wire Line
+	9500 5650 9500 5900
+NoConn ~ 9400 5250
+NoConn ~ 9400 5350
+NoConn ~ 9400 5050
+NoConn ~ 8000 5350
+$Comp
+L Device:R_Small 0ohm1
+U 1 1 5CB08528
+P 7850 4750
+F 0 "0ohm1" H 7909 4796 50  0000 L CNN
+F 1 "R_Small" H 7909 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 4750 50  0001 C CNN
+F 3 "~" H 7850 4750 50  0001 C CNN
+	1    7850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small 0ohm2
+U 1 1 5CB085A3
+P 7850 5450
+F 0 "0ohm2" H 7909 5496 50  0000 L CNN
+F 1 "R_Small" H 7909 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 5450 50  0001 C CNN
+F 3 "~" H 7850 5450 50  0001 C CNN
+	1    7850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5150 7850 5150
+Wire Wire Line
+	7850 5150 7850 4850
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 5CB0C3C5
+P 7850 4650
+F 0 "#PWR0117" H 7850 4500 50  0001 C CNN
+F 1 "+3V3" H 7865 4823 50  0000 C CNN
+F 2 "" H 7850 4650 50  0001 C CNN
+F 3 "" H 7850 4650 50  0001 C CNN
+	1    7850 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 5550
+Wire Wire Line
+	7850 5550 7700 5550
+Wire Wire Line
+	7850 5350 7850 5150
+Connection ~ 7850 5150
 $EndSCHEMATC
