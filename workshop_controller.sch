@@ -233,17 +233,6 @@ F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 870
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor:BME280 U2
-U 1 1 5CA64E9A
-P 7000 5300
-F 0 "U2" H 6570 5346 50  0000 R CNN
-F 1 "BME280" H 6570 5255 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7000 5100 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 7000 5100 50  0001 C CNN
-	1    7000 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5CA65465
 P 5350 4150
@@ -411,21 +400,17 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0111
 U 1 1 5CA917C5
-P 7100 4700
-F 0 "#PWR0111" H 7100 4550 50  0001 C CNN
-F 1 "+3V3" H 7115 4873 50  0000 C CNN
-F 2 "" H 7100 4700 50  0001 C CNN
-F 3 "" H 7100 4700 50  0001 C CNN
-	1    7100 4700
+P 7000 4350
+F 0 "#PWR0111" H 7000 4200 50  0001 C CNN
+F 1 "+3V3" H 7015 4523 50  0000 C CNN
+F 2 "" H 7000 4350 50  0001 C CNN
+F 3 "" H 7000 4350 50  0001 C CNN
+	1    7000 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7600 5200 7950 5200
 Connection ~ 7950 5200
 Wire Wire Line
 	7950 5200 7950 5250
-Wire Wire Line
-	7600 5400 7800 5400
 Wire Wire Line
 	7800 5400 7800 4950
 Wire Wire Line
@@ -445,12 +430,7 @@ F 3 "" H 7700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 5900 7700 5900
-Wire Wire Line
 	7700 5900 7700 6100
-Wire Wire Line
-	6900 5900 7100 5900
-Connection ~ 7100 5900
 Wire Wire Line
 	8700 6250 7950 6250
 Wire Wire Line
@@ -761,4 +741,174 @@ Wire Wire Line
 Wire Wire Line
 	7850 5350 7850 5150
 Connection ~ 7850 5150
+Wire Wire Line
+	6400 5800 6400 5900
+Wire Wire Line
+	6400 5900 6600 5900
+Wire Wire Line
+	6600 5800 6600 5900
+Connection ~ 6600 5900
+Wire Wire Line
+	6600 5900 7450 5900
+Wire Wire Line
+	7100 5500 7300 5500
+$Comp
+L Device:C_Small 100nF1
+U 1 1 5CB26720
+P 6400 4500
+F 0 "100nF1" H 6492 4546 50  0000 L CNN
+F 1 "C_Small" H 6492 4455 50  0000 L CNN
+F 2 "" H 6400 4500 50  0001 C CNN
+F 3 "~" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4600 6900 4600
+$Comp
+L Device:C_Small 100nF2
+U 1 1 5CB2F53A
+P 6600 4500
+F 0 "100nF2" H 6692 4546 50  0000 L CNN
+F 1 "C_Small" H 6692 4455 50  0000 L CNN
+F 2 "" H 6600 4500 50  0001 C CNN
+F 3 "~" H 6600 4500 50  0001 C CNN
+	1    6600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB33AA1
+P 6500 4350
+F 0 "#PWR?" H 6500 4100 50  0001 C CNN
+F 1 "GND" H 6505 4177 50  0000 C CNN
+F 2 "" H 6500 4350 50  0001 C CNN
+F 3 "" H 6500 4350 50  0001 C CNN
+	1    6500 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4650 7000 4350
+Wire Wire Line
+	7000 4350 6900 4350
+Wire Wire Line
+	6900 4350 6900 4600
+Connection ~ 7000 4350
+Wire Wire Line
+	7300 4350 7300 5100
+$Comp
+L Device:R_Small 4.7kohm2
+U 1 1 5CB4F8F9
+P 7200 5300
+F 0 "4.7kohm2" V 7004 5300 50  0000 C CNN
+F 1 "R_Small" V 7095 5300 50  0000 C CNN
+F 2 "" H 7200 5300 50  0001 C CNN
+F 3 "~" H 7200 5300 50  0001 C CNN
+	1    7200 5300
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 5300
+Wire Wire Line
+	7300 5300 7300 5500
+$Comp
+L Device:R_Small 4.7kohm1
+U 1 1 5CB4F9EF
+P 7200 5100
+F 0 "4.7kohm1" V 7004 5100 50  0000 C CNN
+F 1 "R_Small" V 7095 5100 50  0000 C CNN
+F 2 "" H 7200 5100 50  0001 C CNN
+F 3 "~" H 7200 5100 50  0001 C CNN
+	1    7200 5100
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 5100
+Wire Wire Line
+	7300 5100 7300 5300
+Wire Wire Line
+	7100 5300 7100 5400
+Wire Wire Line
+	7100 5100 7100 5200
+$Comp
+L Device:R_Small 0ohm3
+U 1 1 5CB6002C
+P 7050 4600
+F 0 "0ohm3" H 7109 4646 50  0000 L CNN
+F 1 "R_Small" H 7109 4555 50  0000 L CNN
+F 2 "" H 7050 4600 50  0001 C CNN
+F 3 "~" H 7050 4600 50  0001 C CNN
+	1    7050 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 4600
+Connection ~ 7100 5100
+Connection ~ 7100 5300
+$Comp
+L Sensor:BME280 U2
+U 1 1 5CA64E9A
+P 6500 5200
+F 0 "U2" H 6070 5246 50  0000 R CNN
+F 1 "BME280" H 6070 5155 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 6500 5000 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 6500 5000 50  0001 C CNN
+	1    6500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4900 7100 4850
+Wire Wire Line
+	7100 4850 7050 4850
+Wire Wire Line
+	7050 4850 7050 4800
+$Comp
+L Device:R_Small 0ohm4
+U 1 1 5CB80FEA
+P 7150 4800
+F 0 "0ohm4" V 6954 4800 50  0000 C CNN
+F 1 "R_Small" V 7045 4800 50  0000 C CNN
+F 2 "" H 7150 4800 50  0001 C CNN
+F 3 "~" H 7150 4800 50  0001 C CNN
+	1    7150 4800
+	0    1    1    0   
+$EndComp
+Connection ~ 7050 4800
+Wire Wire Line
+	7050 4800 7050 4700
+Wire Wire Line
+	7250 4800 7450 4800
+Wire Wire Line
+	7450 4800 7450 5900
+Connection ~ 7450 5900
+Wire Wire Line
+	7450 5900 7700 5900
+Wire Wire Line
+	7100 5200 7950 5200
+Wire Wire Line
+	7100 5400 7800 5400
+Wire Wire Line
+	6450 4650 6450 4600
+Wire Wire Line
+	6450 4600 6400 4600
+Wire Wire Line
+	6450 4650 7000 4650
+Connection ~ 6400 4600
+Wire Wire Line
+	6500 4350 6400 4350
+Wire Wire Line
+	6400 4350 6400 4400
+Wire Wire Line
+	6500 4350 6600 4350
+Wire Wire Line
+	6600 4350 6600 4400
+Connection ~ 6500 4350
+Wire Wire Line
+	7000 4350 7100 4350
+Wire Wire Line
+	7050 4500 7050 4450
+Wire Wire Line
+	7050 4450 7100 4450
+Wire Wire Line
+	7100 4450 7100 4350
+Connection ~ 7100 4350
+Wire Wire Line
+	7100 4350 7300 4350
 $EndSCHEMATC
