@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 15)
@@ -362,7 +362,7 @@
   )
 
   (module Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm (layer F.Cu) (tedit 5B5A6A65) (tstamp 5CB2C697)
-    (at 131.869001 143.045001)
+    (at 154.305 104.14)
     (descr "24-Lead Plastic QFN (3mm x 3mm); Pitch 0.4mm; EP 1.7x1.54mm; for InvenSense motion sensors; keepout area marked (Package see: https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf; See also https://www.invensense.com/wp-content/uploads/2015/02/InvenSense-MEMS-Handling.pdf)")
     (tags "QFN 0.4")
     (path /5CA64D58)
@@ -459,8 +459,8 @@
     )
   )
 
-  (module Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering (layer F.Cu) (tedit 5A0FA816) (tstamp 5CB2C80C)
-    (at 140.716 142.748)
+  (module Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering (layer F.Cu) (tedit 5A0FA816) (tstamp 5CB6739D)
+    (at 166.751 129.032)
     (descr LGA-8)
     (tags "lga land grid array")
     (path /5CA64E9A)
@@ -1059,7 +1059,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5CB671D5)
-    (at 156.615001 114.641001)
+    (at 160.782 104.267)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CAAB507)
@@ -1095,7 +1095,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5CB671E6)
-    (at 162.565001 110.991001)
+    (at 148.209 109.347)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CAD8E6E)
@@ -1131,7 +1131,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5CB671F7)
-    (at 159.965001 114.641001)
+    (at 149.606 100.457)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CB08528)
@@ -1167,7 +1167,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBD) (tstamp 5CB67208)
-    (at 162.565001 112.501001)
+    (at 155.829 99.06)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CB085A3)
@@ -1203,7 +1203,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5CB67219)
-    (at 163.315001 114.011001)
+    (at 160.909 108.077)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CAAB5AB)
@@ -1239,7 +1239,7 @@
   )
 
   (module Package_SO:TSSOP-8_3x3mm_P0.65mm (layer F.Cu) (tedit 5A02F25C) (tstamp 5CB67236)
-    (at 157.915001 112.061001)
+    (at 152.654 117.602)
     (descr "TSSOP8: plastic thin shrink small outline package; 8 leads; body width 3 mm; (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot505-1_po.pdf)")
     (tags "SSOP 0.65")
     (path /5CAD7DF6)
@@ -1291,5 +1291,10 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_line (start 70 50) (end 240 50) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 70 140) (end 70 50) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 240 140) (end 70 140) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 240 50) (end 240 140) (layer Edge.Cuts) (width 0.2))
 
 )
