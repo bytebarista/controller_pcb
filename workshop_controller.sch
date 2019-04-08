@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:workshop_controller-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -954,7 +954,7 @@ F 3 "" H 6550 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Micro_SD_Card J4
+L workshop_controller-rescue:Micro_SD_Card-Connector J4
 U 1 1 5CCA02B7
 P 7450 1350
 F 0 "J4" H 7400 2067 50  0000 C CNN
@@ -1130,10 +1130,10 @@ JOY_X
 Text Label 1450 1750 0    50   ~ 0
 JOY_Y
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0138
 U 1 1 5CD0AC46
 P 1100 1950
-F 0 "#PWR?" H 1100 1700 50  0001 C CNN
+F 0 "#PWR0138" H 1100 1700 50  0001 C CNN
 F 1 "GND" H 1105 1777 50  0000 C CNN
 F 2 "" H 1100 1950 50  0001 C CNN
 F 3 "" H 1100 1950 50  0001 C CNN
@@ -1141,10 +1141,10 @@ F 3 "" H 1100 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0139
 U 1 1 5CD0AFBD
 P 1600 1950
-F 0 "#PWR?" H 1600 1700 50  0001 C CNN
+F 0 "#PWR0139" H 1600 1700 50  0001 C CNN
 F 1 "GND" H 1605 1777 50  0000 C CNN
 F 2 "" H 1600 1950 50  0001 C CNN
 F 3 "" H 1600 1950 50  0001 C CNN
@@ -1152,10 +1152,10 @@ F 3 "" H 1600 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0140
 U 1 1 5CD0C0CF
 P 800 1950
-F 0 "#PWR?" H 800 1800 50  0001 C CNN
+F 0 "#PWR0140" H 800 1800 50  0001 C CNN
 F 1 "+3V3" H 815 2123 50  0000 C CNN
 F 2 "" H 800 1950 50  0001 C CNN
 F 3 "" H 800 1950 50  0001 C CNN
@@ -1163,14 +1163,47 @@ F 3 "" H 800 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0141
 U 1 1 5CD0D40E
 P 1300 1950
-F 0 "#PWR?" H 1300 1800 50  0001 C CNN
+F 0 "#PWR0141" H 1300 1800 50  0001 C CNN
 F 1 "+3V3" H 1315 2123 50  0000 C CNN
 F 2 "" H 1300 1950 50  0001 C CNN
 F 3 "" H 1300 1950 50  0001 C CNN
 	1    1300 1950
 	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U5
+U 1 1 5CABA90F
+P 1550 4800
+F 0 "U5" H 1550 5167 50  0000 C CNN
+F 1 "LM358" H 1550 5076 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1550 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1550 4800 50  0001 C CNN
+	1    1550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U6
+U 2 1 5CABABB9
+P 1050 5100
+F 0 "U6" H 1050 5467 50  0000 C CNN
+F 1 "LM358" H 1050 5376 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1050 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1050 5100 50  0001 C CNN
+	2    1050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U6
+U 3 1 5CABAC9F
+P 2050 4850
+F 0 "U6" H 2008 4896 50  0000 L CNN
+F 1 "LM358" H 2008 4805 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 2050 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2050 4850 50  0001 C CNN
+	3    2050 4850
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
