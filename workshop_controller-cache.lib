@@ -303,23 +303,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Microphone
-#
-DEF Device_Microphone MK 0 1 Y N 1 F N
-F0 "MK" -150 50 50 H V R CNN
-F1 "Device_Microphone" -150 -25 50 H V R CNN
-F2 "" 0 100 50 V I C CNN
-F3 "" 0 100 50 V I C CNN
-DRAW
-C 0 0 100 0 1 10 N
-P 2 0 1 10 -100 100 -100 -100 N
-P 2 0 1 0 10 150 30 150 N
-P 2 0 1 0 20 160 20 140 N
-X - 1 0 -200 100 U 50 50 1 1 P
-X + 2 0 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R_POT_Dual
 #
 DEF Device_R_POT_Dual RV 0 40 Y N 1 F N
@@ -503,6 +486,21 @@ P 2 0 1 0 0 50 0 120 N
 P 2 0 1 0 100 50 -100 50 N
 X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# bytebarista_Microphone4
+#
+DEF bytebarista_Microphone4 M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "bytebarista_Microphone4" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X VDD 1 250 -100 100 L 50 50 1 1 I
+X GND 2 250 -300 100 L 50 50 1 1 I
+X GND 3 -250 -400 100 R 50 50 1 1 I
+X Signal 4 -250 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
