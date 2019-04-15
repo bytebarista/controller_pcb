@@ -307,17 +307,6 @@ F 3 "" H 4750 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_Expansion:MCP23S17_SS U3
-U 1 1 5CA69BB7
-P 10300 2650
-F 0 "U3" H 10300 3928 50  0000 C CNN
-F 1 "MCP23S17_SS" H 10300 3837 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 10500 1650 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 10500 1550 50  0001 L CNN
-	1    10300 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x06_Female SPI_HEADER1
 U 1 1 5CA7AA74
 P 5050 6150
@@ -377,8 +366,6 @@ Text Label 3150 6200 2    50   ~ 0
 PIN_SCL
 Text Label 3650 6400 0    50   ~ 0
 PIN_VCI
-Wire Wire Line
-	4850 6650 4850 6700
 $Comp
 L Amplifier_Audio:LM4990MM U4
 U 1 1 5CAD7DF6
@@ -1353,4 +1340,67 @@ F 3 "~" H 1250 6100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 6100 950  6100
+$Comp
+L Interface_Expansion:MCP23017_ML U3
+U 1 1 5CB50D6F
+P 9750 2350
+F 0 "U3" H 9750 3628 50  0000 C CNN
+F 1 "MCP23017_ML" H 9750 3537 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm" H 9950 1350 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 9950 1250 50  0001 L CNN
+	1    9750 2350
+	1    0    0    -1  
+$EndComp
+Text Label 9050 1550 2    50   ~ 0
+I2C_SDA
+Text Label 9050 1650 2    50   ~ 0
+I2C_SCK
+$Comp
+L power:+3V3 #PWR0148
+U 1 1 5CB510D4
+P 9750 1250
+F 0 "#PWR0148" H 9750 1100 50  0001 C CNN
+F 1 "+3V3" H 9765 1423 50  0000 C CNN
+F 2 "" H 9750 1250 50  0001 C CNN
+F 3 "" H 9750 1250 50  0001 C CNN
+	1    9750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female I2C_HEADER1
+U 1 1 5CB520FF
+P 5600 7150
+F 0 "I2C_HEADER1" H 5627 7126 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5627 7035 50  0000 L CNN
+F 2 "" H 5600 7150 50  0001 C CNN
+F 3 "~" H 5600 7150 50  0001 C CNN
+	1    5600 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB52403
+P 5400 7050
+F 0 "#PWR?" H 5400 6800 50  0001 C CNN
+F 1 "GND" V 5405 6922 50  0000 R CNN
+F 2 "" H 5400 7050 50  0001 C CNN
+F 3 "" H 5400 7050 50  0001 C CNN
+	1    5400 7050
+	0    1    1    0   
+$EndComp
+Text Label 5400 7150 2    50   ~ 0
+I2C_SDA
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CB527A9
+P 5400 7250
+F 0 "#PWR?" H 5400 7100 50  0001 C CNN
+F 1 "+3V3" V 5415 7378 50  0000 L CNN
+F 2 "" H 5400 7250 50  0001 C CNN
+F 3 "" H 5400 7250 50  0001 C CNN
+	1    5400 7250
+	0    -1   -1   0   
+$EndComp
+Text Label 5400 7350 2    50   ~ 0
+I2C_SCK
 $EndSCHEMATC
