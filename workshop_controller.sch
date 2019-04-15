@@ -482,10 +482,10 @@ NoConn ~ 9950 5450
 NoConn ~ 9950 5150
 NoConn ~ 8550 5450
 $Comp
-L Device:R_Small 0ohm1
+L Device:R_Small R12
 U 1 1 5CB08528
 P 8100 4850
-F 0 "0ohm1" H 8159 4896 50  0000 L CNN
+F 0 "R12" H 8159 4896 50  0000 L CNN
 F 1 "R_Small" H 8159 4805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 4850 50  0001 C CNN
 F 3 "~" H 8100 4850 50  0001 C CNN
@@ -493,10 +493,10 @@ F 3 "~" H 8100 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small 0ohm2
+L Device:R_Small R13
 U 1 1 5CB085A3
 P 8100 5550
-F 0 "0ohm2" H 8159 5596 50  0000 L CNN
+F 0 "R13" H 8159 5596 50  0000 L CNN
 F 1 "R_Small" H 8159 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 5550 50  0001 C CNN
 F 3 "~" H 8100 5550 50  0001 C CNN
@@ -575,10 +575,10 @@ F 3 "~" H 7500 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small 0ohm3
+L Device:R_Small R10
 U 1 1 5CB6002C
 P 7100 4600
-F 0 "0ohm3" H 7159 4646 50  0000 L CNN
+F 0 "R10" H 7159 4646 50  0000 L CNN
 F 1 "R_Small" H 7159 4555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7100 4600 50  0001 C CNN
 F 3 "~" H 7100 4600 50  0001 C CNN
@@ -597,10 +597,10 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_D
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small 0ohm4
+L Device:R_Small R11
 U 1 1 5CB80FEA
 P 7200 4800
-F 0 "0ohm4" V 7004 4800 50  0000 C CNN
+F 0 "R11" V 7004 4800 50  0000 C CNN
 F 1 "R_Small" V 7095 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7200 4800 50  0001 C CNN
 F 3 "~" H 7200 4800 50  0001 C CNN
@@ -782,11 +782,6 @@ F 3 "" H 3150 6500 50  0001 C CNN
 	1    3150 6500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7100 4700 7100 4800
-Connection ~ 7100 4800
-Wire Wire Line
-	7100 4800 7100 4900
 $Comp
 L power:+3V3 #PWR0129
 U 1 1 5CC4B76B
@@ -1378,10 +1373,10 @@ F 3 "~" H 5600 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0149
 U 1 1 5CB52403
 P 5400 7050
-F 0 "#PWR?" H 5400 6800 50  0001 C CNN
+F 0 "#PWR0149" H 5400 6800 50  0001 C CNN
 F 1 "GND" V 5405 6922 50  0000 R CNN
 F 2 "" H 5400 7050 50  0001 C CNN
 F 3 "" H 5400 7050 50  0001 C CNN
@@ -1391,10 +1386,10 @@ $EndComp
 Text Label 5400 7150 2    50   ~ 0
 I2C_SDA
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0150
 U 1 1 5CB527A9
 P 5400 7250
-F 0 "#PWR?" H 5400 7100 50  0001 C CNN
+F 0 "#PWR0150" H 5400 7100 50  0001 C CNN
 F 1 "+3V3" V 5415 7378 50  0000 L CNN
 F 2 "" H 5400 7250 50  0001 C CNN
 F 3 "" H 5400 7250 50  0001 C CNN
@@ -1403,4 +1398,9 @@ F 3 "" H 5400 7250 50  0001 C CNN
 $EndComp
 Text Label 5400 7350 2    50   ~ 0
 I2C_SCK
+Connection ~ 7100 4800
+Wire Wire Line
+	7100 4800 7100 4900
+Wire Wire Line
+	7100 4700 7100 4800
 $EndSCHEMATC
