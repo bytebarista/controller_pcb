@@ -521,23 +521,23 @@ $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5CB4F8F9
-P 7500 5300
-F 0 "R2" V 7304 5300 50  0000 C CNN
-F 1 "4.7kohm" V 7395 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 5300 50  0001 C CNN
-F 3 "~" H 7500 5300 50  0001 C CNN
-	1    7500 5300
+P 8300 2950
+F 0 "R2" V 8104 2950 50  0000 C CNN
+F 1 "4.7kohm" V 8195 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8300 2950 50  0001 C CNN
+F 3 "~" H 8300 2950 50  0001 C CNN
+	1    8300 2950
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5CB4F9EF
-P 7500 5100
-F 0 "R1" V 7304 5100 50  0000 C CNN
-F 1 "4.7kohm" V 7395 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7500 5100 50  0001 C CNN
-F 3 "~" H 7500 5100 50  0001 C CNN
-	1    7500 5100
+P 8250 3200
+F 0 "R1" V 8054 3200 50  0000 C CNN
+F 1 "4.7kohm" V 8145 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 3200 50  0001 C CNN
+F 3 "~" H 8250 3200 50  0001 C CNN
+	1    8250 3200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -584,11 +584,9 @@ Wire Wire Line
 Connection ~ 6500 4350
 Text Label 7800 3000 0    50   ~ 0
 I2C_SCK
-Wire Wire Line
-	7300 3000 7800 3000
 Text Label 8250 5350 0    50   ~ 0
 I2C_SCK
-Text Label 7100 5200 0    50   ~ 0
+Text Label 7100 5100 0    50   ~ 0
 I2C_SCK
 $Comp
 L power:GND #PWR0119
@@ -638,11 +636,8 @@ Text Label 7800 3200 0    50   ~ 0
 I2C_SDA
 Text Label 8250 5150 0    50   ~ 0
 I2C_SDA
-Text Label 7100 5450 0    50   ~ 0
+Text Label 7100 5300 0    50   ~ 0
 I2C_SDA
-Wire Wire Line
-	7100 5450 7100 5300
-Connection ~ 7100 5300
 $Comp
 L power:GND #PWR0123
 U 1 1 5CB001CF
@@ -671,21 +666,8 @@ F 3 "" H 9950 5850 50  0001 C CNN
 	1    9950 5850
 	1    0    0    -1  
 $EndComp
-Connection ~ 7600 5100
-Wire Wire Line
-	7600 5100 7600 5300
-Connection ~ 7600 5300
-Wire Wire Line
-	7600 5300 7600 5500
 Wire Wire Line
 	7100 5500 7600 5500
-Wire Wire Line
-	7100 5300 7400 5300
-Wire Wire Line
-	7100 5100 7400 5100
-Wire Wire Line
-	7100 5100 7100 5200
-Connection ~ 7100 5100
 Text Label 4850 6250 2    50   ~ 0
 SPI_SCL
 Text Label 4850 6350 2    50   ~ 0
@@ -781,8 +763,6 @@ F 3 "" H 7600 5050 50  0001 C CNN
 	1    7600 5050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7600 5050 7600 5100
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5CC6CBA8
@@ -869,8 +849,6 @@ Text Label 5550 3100 0    50   ~ 0
 DAC26
 Text Label 7800 3100 0    50   ~ 0
 DAC25
-Wire Wire Line
-	7300 3200 7800 3200
 $Comp
 L power:+3V3 #PWR0110
 U 1 1 5CC9108B
@@ -1825,4 +1803,114 @@ Text Label 5550 3700 0    50   ~ 0
 LED_CLK
 Wire Wire Line
 	5050 3700 5550 3700
+Wire Wire Line
+	7600 5050 7600 5500
+Wire Wire Line
+	8200 3000 8200 2950
+Wire Wire Line
+	7300 3000 8200 3000
+Wire Wire Line
+	7300 3200 8150 3200
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 5CC39E10
+P 8600 3050
+F 0 "#PWR0166" H 8600 2900 50  0001 C CNN
+F 1 "+3V3" V 8615 3178 50  0000 L CNN
+F 2 "" H 8600 3050 50  0001 C CNN
+F 3 "" H 8600 3050 50  0001 C CNN
+	1    8600 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 3200 8600 3200
+Wire Wire Line
+	8600 3200 8600 3050
+Wire Wire Line
+	8400 2950 8600 2950
+Wire Wire Line
+	8600 2950 8600 3050
+Connection ~ 8600 3050
+$Comp
+L power:+3V3 #PWR0167
+U 1 1 5CC68DDB
+P 8900 2700
+F 0 "#PWR0167" H 8900 2550 50  0001 C CNN
+F 1 "+3V3" V 8915 2828 50  0000 L CNN
+F 2 "" H 8900 2700 50  0001 C CNN
+F 3 "" H 8900 2700 50  0001 C CNN
+	1    8900 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 2450 8900 2450
+Wire Wire Line
+	8900 2450 8900 2700
+Wire Wire Line
+	9050 2950 9050 2700
+Wire Wire Line
+	9050 2700 9000 2700
+Connection ~ 8900 2700
+Wire Wire Line
+	9050 3050 9000 3050
+Wire Wire Line
+	9000 3050 9000 2700
+Connection ~ 9000 2700
+Wire Wire Line
+	9000 2700 8900 2700
+Wire Wire Line
+	9050 3150 9050 3600
+Wire Wire Line
+	9050 3600 8850 3600
+$Comp
+L Device:R_Small R18
+U 1 1 5CC8ADDC
+P 8750 3600
+F 0 "R18" V 8554 3600 50  0000 C CNN
+F 1 "R_Small" V 8645 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8750 3600 50  0001 C CNN
+F 3 "~" H 8750 3600 50  0001 C CNN
+	1    8750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 5CC8B193
+P 9350 3600
+F 0 "R19" V 9154 3600 50  0000 C CNN
+F 1 "R_Small" V 9245 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9350 3600 50  0001 C CNN
+F 3 "~" H 9350 3600 50  0001 C CNN
+	1    9350 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 3600 9250 3600
+Connection ~ 9050 3600
+$Comp
+L power:+3V3 #PWR0168
+U 1 1 5CC92387
+P 8650 3600
+F 0 "#PWR0168" H 8650 3450 50  0001 C CNN
+F 1 "+3V3" H 8665 3773 50  0000 C CNN
+F 2 "" H 8650 3600 50  0001 C CNN
+F 3 "" H 8650 3600 50  0001 C CNN
+	1    8650 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 5CC92505
+P 9450 3600
+F 0 "#PWR0169" H 9450 3350 50  0001 C CNN
+F 1 "GND" H 9455 3427 50  0000 C CNN
+F 2 "" H 9450 3600 50  0001 C CNN
+F 3 "" H 9450 3600 50  0001 C CNN
+	1    9450 3600
+	1    0    0    -1  
+$EndComp
+Text Label 9050 2150 2    50   ~ 0
+PIN_22
+Text Label 9050 2250 2    50   ~ 0
+PIN_21
 $EndSCHEMATC
