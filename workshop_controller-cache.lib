@@ -402,40 +402,6 @@ X 2 2 -200 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# GSG_APA102
-#
-DEF GSG_APA102 D 0 40 Y Y 1 F N
-F0 "D" 0 200 60 H V C CNN
-F1 "GSG_APA102" 0 -200 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S -200 250 200 -250 0 1 0 N
-X SDO 1 350 100 150 L 50 50 1 1 O
-X SDI 2 -350 100 150 R 50 50 1 1 I
-X CKI 3 -350 0 150 R 50 50 1 1 I
-X GND 4 -350 -100 150 R 50 50 1 1 W
-X VCC 5 350 -100 150 L 50 50 1 1 W
-X CKO 6 350 0 150 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# HackPack4_HackPackv4-rescue_PSP_1000_JSTK
-#
-DEF HackPack4_HackPackv4-rescue_PSP_1000_JSTK U 0 40 Y Y 1 F N
-F0 "U" 400 400 60 H V C CNN
-F1 "HackPack4_HackPackv4-rescue_PSP_1000_JSTK" 700 -500 60 H V C CNN
-F2 "" 1300 -700 60 H I C CNN
-F3 "" 1300 -700 60 H I C CNN
-DRAW
-S -300 450 300 -550 0 1 0 N
-X LEFT_RIGHT 1 -500 50 200 R 50 50 1 1 O
-X VCC 2 0 650 200 D 50 50 1 1 W
-X UP_DOWN 3 -500 -50 200 R 50 50 1 1 O
-X GND 4 0 -750 200 U 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # Interface_Expansion_MCP23017_ML
 #
 DEF Interface_Expansion_MCP23017_ML U 0 40 Y Y 1 F N
@@ -549,45 +515,6 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# bytebarista_Microphone4
-#
-DEF bytebarista_Microphone4 M 0 40 Y Y 1 F N
-F0 "M" 0 0 50 H V C CNN
-F1 "bytebarista_Microphone4" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-X VDD 1 250 -100 100 L 50 50 1 1 I
-X GND 2 250 -300 100 L 50 50 1 1 I
-X GND 3 -250 -400 100 R 50 50 1 1 I
-X Signal 4 -250 -200 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# bytebarista_TPA6203A1
-#
-DEF bytebarista_TPA6203A1 U 0 40 Y Y 1 F N
-F0 "U" 0 -100 50 H V C CNN
-F1 "bytebarista_TPA6203A1" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-T 0 50 -1050 50 0 0 0 Bias Normal 0 C C
-S -50 -200 300 -1150 0 0 0 f
-S -50 -950 250 -1100 0 1 0 N
-P 3 0 0 0 50 -750 50 -950 50 -850 N
-P 4 0 0 0 0 -200 300 -500 0 -800 0 -200 N
-X SHUTDOWN 1 -150 -1000 100 R 39 39 1 1 I
-X BYPASS 2 -150 -1100 100 R 39 39 1 1 I
-X + 3 -100 -650 100 R 39 39 1 1 I
-X - 4 -100 -350 100 R 39 39 1 1 I
-X VO+ 5 300 -400 100 L 39 39 1 1 O
-X VDD 6 150 -250 100 D 39 39 1 1 W
-X GND 7 150 -750 100 U 39 39 1 1 C
-X VO- 8 300 -600 100 L 39 39 1 1 O
-ENDDRAW
-ENDDEF
-#
 # power_+3V3
 #
 DEF power_+3V3 #PWR 0 0 Y Y 1 F P
@@ -632,6 +559,40 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# workshop_controller-rescue_APA102-GSG
+#
+DEF workshop_controller-rescue_APA102-GSG D 0 40 Y Y 1 F N
+F0 "D" 0 200 60 H V C CNN
+F1 "workshop_controller-rescue_APA102-GSG" 0 -200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -200 250 200 -250 0 1 0 N
+X SDO 1 350 100 150 L 50 50 1 1 O
+X SDI 2 -350 100 150 R 50 50 1 1 I
+X CKI 3 -350 0 150 R 50 50 1 1 I
+X GND 4 -350 -100 150 R 50 50 1 1 W
+X VCC 5 350 -100 150 L 50 50 1 1 W
+X CKO 6 350 0 150 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4
+#
+DEF workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4 U 0 40 Y Y 1 F N
+F0 "U" 400 400 60 H V C CNN
+F1 "workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4" 700 -500 60 H V C CNN
+F2 "" 1300 -700 60 H I C CNN
+F3 "" 1300 -700 60 H I C CNN
+DRAW
+S -300 450 300 -550 0 1 0 N
+X LEFT_RIGHT 1 -500 50 200 R 50 50 1 1 O
+X VCC 2 0 650 200 D 50 50 1 1 W
+X UP_DOWN 3 -500 -50 200 R 50 50 1 1 O
+X GND 4 0 -750 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # workshop_controller-rescue_Micro_SD_Card-Connector
 #
 DEF workshop_controller-rescue_Micro_SD_Card-Connector J 0 40 Y Y 1 F N
@@ -662,6 +623,45 @@ X VSS 6 -900 -200 150 R 50 50 1 1 W
 X DAT0 7 -900 -300 150 R 50 50 1 1 B
 X DAT1 8 -900 -400 150 R 50 50 1 1 B
 X SHIELD 9 800 -600 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# workshop_controller-rescue_Microphone4-bytebarista
+#
+DEF workshop_controller-rescue_Microphone4-bytebarista M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "workshop_controller-rescue_Microphone4-bytebarista" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X VDD 1 250 -100 100 L 50 50 1 1 I
+X GND 2 250 -300 100 L 50 50 1 1 I
+X GND 3 -250 -400 100 R 50 50 1 1 I
+X Signal 4 -250 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# workshop_controller-rescue_TPA6203A1-bytebarista
+#
+DEF workshop_controller-rescue_TPA6203A1-bytebarista U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "workshop_controller-rescue_TPA6203A1-bytebarista" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 50 -1050 50 0 0 0 Bias Normal 0 C C
+S -50 -200 300 -1150 0 0 0 f
+S -50 -950 250 -1100 0 1 0 N
+P 3 0 0 0 50 -750 50 -950 50 -850 N
+P 4 0 0 0 0 -200 300 -500 0 -800 0 -200 N
+X SHUTDOWN 1 -150 -1000 100 R 39 39 1 1 I
+X BYPASS 2 -150 -1100 100 R 39 39 1 1 I
+X + 3 -100 -650 100 R 39 39 1 1 I
+X - 4 -100 -350 100 R 39 39 1 1 I
+X VO+ 5 300 -400 100 L 39 39 1 1 O
+X VDD 6 150 -250 100 D 39 39 1 1 W
+X GND 7 150 -750 100 U 39 39 1 1 C
+X VO- 8 300 -600 100 L 39 39 1 1 O
 ENDDRAW
 ENDDEF
 #
