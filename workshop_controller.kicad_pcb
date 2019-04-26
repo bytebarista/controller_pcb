@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (1 Ground power hide)
+    (1 Ground power)
     (2 Power mixed hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
@@ -5070,6 +5070,22 @@
         (xy 120.327431 73.33628) (xy 120.485 72.955874) (xy 120.485 72.544126) (xy 120.327431 72.16372) (xy 120.03628 71.872569)
         (xy 119.655874 71.715) (xy 119.244126 71.715) (xy 118.86372 71.872569) (xy 118.572569 72.16372) (xy 118.415 72.544126)
         (xy 112.065333 72.544126) (xy 112.274225 63.274579) (xy 124.737895 63.029231)
+      )
+    )
+  )
+  (zone (net 8) (net_name GND) (layer Ground) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 172.9 54.45) (xy 179.4 54.6) (xy 183.35 60.2) (xy 182.7 65.35) (xy 175.4 67.75)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 179.333101 54.72549) (xy 180.006244 55.679819) (xy 180.194817 56.081358) (xy 180.45982 56.322865) (xy 183.217833 60.232959)
+        (xy 182.584055 65.254431) (xy 175.498036 67.584081) (xy 173.053769 54.580582)
       )
     )
   )
