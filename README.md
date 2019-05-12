@@ -1,3 +1,5 @@
-![prototype](images/pcb_prototype.png)
+![prototype-pcb](images/pcb_prototype.png)
 
-More info coming soon!
+![prototype](images/prototype.png)
+
+Info coming soon!
