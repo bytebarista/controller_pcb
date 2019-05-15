@@ -1067,75 +1067,53 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:LM358 U5
 U 1 1 5CADDFC8
-P 1800 8400
-F 0 "U5" H 1800 8767 50  0000 C CNN
-F 1 "LM358" H 1800 8676 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1800 8400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1800 8400 50  0001 C CNN
-	1    1800 8400
+P 1800 8150
+F 0 "U5" H 1800 8517 50  0000 C CNN
+F 1 "LM358" H 1800 8426 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1800 8150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1800 8150 50  0001 C CNN
+	1    1800 8150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:LM358 U5
 U 2 1 5CADE07F
-P 2700 7700
-F 0 "U5" H 2700 8067 50  0000 C CNN
-F 1 "LM358" H 2700 7976 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 2700 7700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2700 7700 50  0001 C CNN
-	2    2700 7700
+P 2500 7250
+F 0 "U5" H 2500 7617 50  0000 C CNN
+F 1 "LM358" H 2500 7526 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 2500 7250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2500 7250 50  0001 C CNN
+	2    2500 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:LM358 U5
 U 3 1 5CADE135
-P 3150 8200
-F 0 "U5" H 3108 8246 50  0000 L CNN
-F 1 "LM358" H 3108 8155 50  0000 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3150 8200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3150 8200 50  0001 C CNN
-	3    3150 8200
+P 3250 7900
+F 0 "U5" H 3208 7946 50  0000 L CNN
+F 1 "LM358" H 3208 7855 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3250 7900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3250 7900 50  0001 C CNN
+	3    3250 7900
 	1    0    0    -1  
 $EndComp
-Text Label 2200 8400 0    50   ~ 0
+Text Label 2200 8150 0    50   ~ 0
 PIN_MIC
-$Comp
-L power:+3V3 #PWR0146
-U 1 1 5CAEC88B
-P 1500 8500
-F 0 "#PWR0146" H 1500 8350 50  0001 C CNN
-F 1 "+3V3" V 1515 8628 50  0000 L CNN
-F 2 "" H 1500 8500 50  0001 C CNN
-F 3 "" H 1500 8500 50  0001 C CNN
-	1    1500 8500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_Small R9
 U 1 1 5CAECB6C
-P 1750 7900
-F 0 "R9" V 1554 7900 50  0000 C CNN
-F 1 "?Ω" V 1645 7900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1750 7900 50  0001 C CNN
-F 3 "~" H 1750 7900 50  0001 C CNN
-	1    1750 7900
+P 1750 8600
+F 0 "R9" V 1554 8600 50  0000 C CNN
+F 1 "?Ω" V 1645 8600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1750 8600 50  0001 C CNN
+F 3 "~" H 1750 8600 50  0001 C CNN
+	1    1750 8600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2100 8400 2100 7900
-Wire Wire Line
-	2100 7900 1850 7900
-Wire Wire Line
-	1650 7900 1500 7900
-Wire Wire Line
-	1500 7900 1500 8300
-Wire Wire Line
-	1500 8300 1100 8300
-Wire Wire Line
-	1100 8300 1100 9200
+	2100 8600 1850 8600
 Wire Wire Line
 	1100 9200 1300 9200
-Connection ~ 1500 8300
 $Comp
 L Device:R_Small R8
 U 1 1 5CAF5D2B
@@ -1148,8 +1126,7 @@ F 3 "~" H 1400 9200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2100 8400 2200 8400
-Connection ~ 2100 8400
+	2100 8150 2200 8150
 Wire Wire Line
 	2650 9100 2650 8950
 Wire Wire Line
@@ -2216,4 +2193,51 @@ Text Label 6550 8850 0    50   ~ 0
 SW3_PIN
 Text Label 6550 9200 0    50   ~ 0
 SW4_PIN
+$Comp
+L power:GND #PWR?
+U 1 1 5CDCD9C9
+P 3150 8200
+F 0 "#PWR?" H 3150 7950 50  0001 C CNN
+F 1 "GND" H 3155 8027 50  0000 C CNN
+F 2 "" H 3150 8200 50  0001 C CNN
+F 3 "" H 3150 8200 50  0001 C CNN
+	1    3150 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CDCDAE7
+P 3150 7600
+F 0 "#PWR?" H 3150 7450 50  0001 C CNN
+F 1 "+3V3" H 3165 7773 50  0000 C CNN
+F 2 "" H 3150 7600 50  0001 C CNN
+F 3 "" H 3150 7600 50  0001 C CNN
+	1    3150 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 8600 1650 8600
+$Comp
+L power:GND #PWR?
+U 1 1 5CE44978
+P 1500 8050
+F 0 "#PWR?" H 1500 7800 50  0001 C CNN
+F 1 "GND" V 1505 7922 50  0000 R CNN
+F 2 "" H 1500 8050 50  0001 C CNN
+F 3 "" H 1500 8050 50  0001 C CNN
+	1    1500 8050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 8250 1400 8250
+Wire Wire Line
+	1400 8250 1400 8600
+Connection ~ 1400 8250
+Wire Wire Line
+	1400 8250 1500 8250
+Wire Wire Line
+	2100 8150 2100 8600
+Connection ~ 2100 8150
+Wire Wire Line
+	1100 8250 1100 9200
 $EndSCHEMATC
