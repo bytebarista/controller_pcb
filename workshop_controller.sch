@@ -49,7 +49,7 @@ F 3 "" H 5750 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 5650 5750 5650
-NoConn ~ 5900 5750
+NoConn ~ 5750 5750
 Text Label 6550 5850 0    50   ~ 0
 PIN_26
 Text Label 6550 5950 0    50   ~ 0
@@ -68,15 +68,14 @@ Text Label 5750 6150 2    50   ~ 0
 PIN_34
 Text Label 5750 6250 2    50   ~ 0
 PIN_TMS_14
-NoConn ~ 5900 6350
 Text Label 5750 6450 2    50   ~ 0
 PIN_SD2_09
 Text Label 5750 6550 2    50   ~ 0
 PIN_CMD_11
 Text Label 6550 6450 0    50   ~ 0
-PIN_TCK
+PIN_TCK_13
 Text Label 6550 6550 0    50   ~ 0
-PIN_SD3
+PIN_SD3_10
 $Comp
 L power:GND #PWR0102
 U 1 1 5C5F4AB8
@@ -109,9 +108,9 @@ PIN_SD1_08
 Text Label 9300 6550 0    50   ~ 0
 PIN_CLK_06
 Text Label 8500 5650 2    50   ~ 0
-PIN_TXD
+PIN_TXD_01
 Text Label 8500 5750 2    50   ~ 0
-PIN_RXD
+PIN_RXD_03
 Text Label 8500 5850 2    50   ~ 0
 PIN_22
 Text Label 8500 5950 2    50   ~ 0
@@ -173,8 +172,6 @@ Text Label 6550 5750 0    50   ~ 0
 PIN_VP_36
 Text Label 5750 5850 2    50   ~ 0
 PIN_VN_39
-Wire Wire Line
-	5750 5850 5900 5850
 Wire Wire Line
 	6550 5650 6400 5650
 $Comp
@@ -720,11 +717,11 @@ Text Label 5050 8800 0    50   ~ 0
 SW3_PIN
 Text Label 5050 9150 0    50   ~ 0
 SW4_PIN
-Text Label 6900 6250 0    50   ~ 0
+Text Label 7000 5750 0    50   ~ 0
 SW1_PIN
 Wire Wire Line
 	6400 6250 6900 6250
-Text Label 5200 6250 2    50   ~ 0
+Text Label 12700 2500 0    50   ~ 0
 SW2_PIN
 Text Label 6900 5850 0    50   ~ 0
 PIN_DAC1
@@ -892,7 +889,7 @@ Wire Wire Line
 	8150 2250 7400 2250
 Text Label 7550 2100 0    50   ~ 0
 SPI_SDI
-Text Label 9650 6350 0    50   ~ 0
+Text Label 5200 6250 2    50   ~ 0
 SS_SDCARD
 Wire Wire Line
 	9150 6350 9650 6350
@@ -903,7 +900,7 @@ Wire Wire Line
 Connection ~ 7550 2150
 Wire Wire Line
 	7550 2150 8150 2150
-Text Label 9650 6150 0    50   ~ 0
+Text Label 9650 6250 0    50   ~ 0
 SS_TFT
 Wire Wire Line
 	9150 6150 9650 6150
@@ -1560,13 +1557,13 @@ Text Label 12700 2300 0    50   ~ 0
 GPIO_EXT_2
 Text Label 12700 2400 0    50   ~ 0
 GPIO_EXT_3
-Text Label 12700 2500 0    50   ~ 0
-SW3_PIN
 Text Label 12700 2600 0    50   ~ 0
+SW3_PIN
+Text Label 12700 2700 0    50   ~ 0
 SW4_PIN
-Text Label 9850 6550 0    50   ~ 0
+Text Label 5200 5850 2    50   ~ 0
 JOY_X
-Text Label 5150 6550 2    50   ~ 0
+Text Label 5350 6150 2    50   ~ 0
 JOY_Y
 $Comp
 L Connector:Conn_01x01_Male J7
@@ -1583,7 +1580,7 @@ Text Label 9800 6050 0    50   ~ 0
 PIN_LOGO_TOUCH
 Text Label 4400 2400 0    50   ~ 0
 PIN_LOGO_TOUCH
-Text Label 6900 6550 0    50   ~ 0
+Text Label 9650 6150 0    50   ~ 0
 LED_DA
 Wire Wire Line
 	6400 6550 6900 6550
@@ -1599,10 +1596,8 @@ Wire Wire Line
 	6950 10300 6050 10300
 Wire Wire Line
 	6050 10400 6950 10400
-Text Label 6900 6450 0    50   ~ 0
+Text Label 7050 6450 0    50   ~ 0
 LED_CLK
-Wire Wire Line
-	6400 6450 6900 6450
 Wire Wire Line
 	12200 8200 12200 8650
 Wire Wire Line
@@ -1859,7 +1854,7 @@ Wire Wire Line
 	5350 5950 5900 5950
 Text Label 1950 2150 2    50   ~ 0
 PIN_AMP_SHUTDOWN
-Text Label 7000 5750 0    50   ~ 0
+Text Label 9650 6350 0    50   ~ 0
 PIN_AMP_SHUTDOWN
 NoConn ~ 14750 3350
 NoConn ~ 14750 3550
@@ -2103,26 +2098,14 @@ Text Label 14150 4850 2    50   ~ 0
 TFT_RESET
 Wire Wire Line
 	14150 4850 14250 4850
-Text Label 7900 6550 2    50   ~ 0
+Text Label 6900 6250 0    50   ~ 0
 TFT_RESET
-Wire Wire Line
-	7900 6550 8650 6550
 Text Label 14250 3550 2    50   ~ 0
 TFT_DC
-Text Label 9850 6450 0    50   ~ 0
+Text Label 7900 6450 2    50   ~ 0
 TFT_DC
 Wire Wire Line
-	9150 6450 9850 6450
-Wire Wire Line
 	8500 5650 8650 5650
-Wire Wire Line
-	9150 6550 9850 6550
-Wire Wire Line
-	9300 6250 9150 6250
-Wire Wire Line
-	5150 6550 5900 6550
-Wire Wire Line
-	8500 6450 8650 6450
 Wire Wire Line
 	11700 7950 11900 7950
 $Comp
@@ -2187,6 +2170,38 @@ Wire Wire Line
 	9150 6050 9800 6050
 Wire Wire Line
 	5350 6050 5900 6050
-Text Label 5350 6150 2    50   ~ 0
-INPUT_ONLY
+Wire Wire Line
+	5900 6550 5750 6550
+Wire Wire Line
+	5200 5850 5900 5850
+Wire Wire Line
+	9150 6550 9300 6550
+NoConn ~ 9300 6550
+Wire Wire Line
+	9150 6450 9300 6450
+NoConn ~ 9300 6450
+NoConn ~ 5750 6450
+NoConn ~ 5750 6550
+Text Label 5500 6350 0    50   ~ 0
+NC
+Wire Wire Line
+	5500 6350 5900 6350
+NoConn ~ 5500 6350
+Text Label 5750 5750 0    50   ~ 0
+NC
+Wire Wire Line
+	5750 5750 5900 5750
+Wire Wire Line
+	6400 6450 7050 6450
+NoConn ~ 6900 6550
+Wire Wire Line
+	7900 6450 8650 6450
+NoConn ~ 8500 5650
+NoConn ~ 8500 5750
+NoConn ~ 6550 5650
+Wire Wire Line
+	9150 6250 9650 6250
+NoConn ~ 8500 6550
+Wire Wire Line
+	8650 6550 8500 6550
 $EndSCHEMATC
