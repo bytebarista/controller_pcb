@@ -67,7 +67,7 @@ PIN_33
 Text Label 5750 6150 2    50   ~ 0
 PIN_34
 Text Label 5750 6250 2    50   ~ 0
-PIN_TMS
+PIN_TMS_14
 NoConn ~ 5900 6350
 Text Label 5750 6450 2    50   ~ 0
 PIN_SD2_09
@@ -97,7 +97,7 @@ PIN_25
 Text Label 9300 5950 0    50   ~ 0
 PIN_32
 Text Label 9300 6050 0    50   ~ 0
-PIN_TDI
+PIN_TDI_12
 Text Label 9300 6150 0    50   ~ 0
 PIN_4
 Text Label 9300 6250 0    50   ~ 0
@@ -170,9 +170,9 @@ Wire Wire Line
 Text Label 6550 5650 0    50   ~ 0
 PIN_RST
 Text Label 6550 5750 0    50   ~ 0
-PIN_VP
+PIN_VP_36
 Text Label 5750 5850 2    50   ~ 0
-PIN_VN
+PIN_VN_39
 Wire Wire Line
 	5750 5850 5900 5850
 Wire Wire Line
@@ -208,17 +208,6 @@ F 1 "SW_Push" H 4850 8644 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 4850 8650 50  0001 C CNN
 F 3 "" H 4850 8650 50  0001 C CNN
 	1    4850 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J3
-U 1 1 5CA656CD
-P 4400 1400
-F 0 "J3" H 4380 1725 50  0000 C CNN
-F 1 "AudioJack3" H 4380 1634 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 4400 1400 50  0001 C CNN
-F 3 "~" H 4400 1400 50  0001 C CNN
-	1    4400 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -735,10 +724,8 @@ Text Label 6900 6250 0    50   ~ 0
 SW1_PIN
 Wire Wire Line
 	6400 6250 6900 6250
-Text Label 5350 6250 2    50   ~ 0
+Text Label 5200 6250 2    50   ~ 0
 SW2_PIN
-Wire Wire Line
-	5350 6250 5900 6250
 Text Label 6900 5850 0    50   ~ 0
 PIN_DAC1
 Text Label 9650 5850 0    50   ~ 0
@@ -1354,21 +1341,6 @@ $EndComp
 Wire Wire Line
 	3150 1100 3350 1100
 $Comp
-L power:GND #PWR0155
-U 1 1 5CBF4395
-P 4600 1300
-F 0 "#PWR0155" H 4600 1050 50  0001 C CNN
-F 1 "GND" V 4605 1172 50  0000 R CNN
-F 2 "" H 4600 1300 50  0001 C CNN
-F 3 "" H 4600 1300 50  0001 C CNN
-	1    4600 1300
-	0    -1   -1   0   
-$EndComp
-Text Label 4600 1400 0    50   ~ 0
-PIN_DAC1
-Text Label 4600 1500 0    50   ~ 0
-PIN_DAC2
-$Comp
 L workshop_controller-rescue:APA102-GSG D2
 U 1 1 5CBA7953
 P 2700 10400
@@ -1609,12 +1581,10 @@ F 3 "~" H 4200 2400 50  0001 C CNN
 	1    4200 2400
 	1    0    0    -1  
 $EndComp
-Text Label 9650 6050 0    50   ~ 0
+Text Label 9800 6050 0    50   ~ 0
 PIN_LOGO_TOUCH
 Text Label 4400 2400 0    50   ~ 0
 PIN_LOGO_TOUCH
-Wire Wire Line
-	9150 6050 9650 6050
 Text Label 6900 6550 0    50   ~ 0
 LED_DA
 Wire Wire Line
@@ -1891,10 +1861,8 @@ Wire Wire Line
 	5350 5950 5900 5950
 Text Label 1950 2150 2    50   ~ 0
 PIN_AMP_SHUTDOWN
-Text Label 6900 5750 0    50   ~ 0
+Text Label 7000 5750 0    50   ~ 0
 PIN_AMP_SHUTDOWN
-Wire Wire Line
-	6400 5750 6900 5750
 NoConn ~ 14750 3350
 NoConn ~ 14750 3550
 NoConn ~ 14750 4750
@@ -2178,4 +2146,45 @@ Wire Wire Line
 Connection ~ 11300 2700
 Wire Wire Line
 	11300 2700 11300 2800
+$Comp
+L power:GND #PWR0111
+U 1 1 5CFE7CD2
+P 5150 1350
+F 0 "#PWR0111" H 5150 1100 50  0001 C CNN
+F 1 "GND" V 5155 1222 50  0000 R CNN
+F 2 "" H 5150 1350 50  0001 C CNN
+F 3 "" H 5150 1350 50  0001 C CNN
+	1    5150 1350
+	0    -1   -1   0   
+$EndComp
+Text Label 5300 1550 0    50   ~ 0
+PIN_DAC1
+Text Label 5150 1650 0    50   ~ 0
+PIN_DAC2
+$Comp
+L Connector:AudioJack4 J3
+U 1 1 5CFE7CDA
+P 4950 1450
+F 0 "J3" H 4905 1775 50  0000 C CNN
+F 1 "AudioJack4" H 4905 1684 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320D_Horizontal" H 4950 1450 50  0001 C CNN
+F 3 "~" H 4950 1450 50  0001 C CNN
+	1    4950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1550 5200 1550
+Wire Wire Line
+	5150 1450 5200 1450
+Wire Wire Line
+	5200 1450 5200 1550
+Connection ~ 5200 1550
+Wire Wire Line
+	5200 1550 5300 1550
+Wire Wire Line
+	5200 6250 5900 6250
+Wire Wire Line
+	6400 5750 7000 5750
+Wire Wire Line
+	9150 6050 9800 6050
 $EndSCHEMATC
