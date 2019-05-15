@@ -909,7 +909,7 @@ Wire Wire Line
 	9150 6150 9650 6150
 Text Label 14450 1500 2    50   ~ 0
 SS_HEADER1
-Text Label 5350 6150 2    50   ~ 0
+Text Label 5350 6050 2    50   ~ 0
 SS_HEADER1
 Wire Wire Line
 	5350 6150 5900 6150
@@ -1564,8 +1564,6 @@ Text Label 12700 2500 0    50   ~ 0
 SW3_PIN
 Text Label 12700 2600 0    50   ~ 0
 SW4_PIN
-Wire Wire Line
-	5750 6050 5900 6050
 Text Label 9850 6550 0    50   ~ 0
 JOY_X
 Text Label 5150 6550 2    50   ~ 0
@@ -2187,4 +2185,8 @@ Wire Wire Line
 	6400 5750 7000 5750
 Wire Wire Line
 	9150 6050 9800 6050
+Wire Wire Line
+	5350 6050 5900 6050
+Text Label 5350 6150 2    50   ~ 0
+INPUT_ONLY
 $EndSCHEMATC
