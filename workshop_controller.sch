@@ -70,9 +70,9 @@ Text Label 5750 6250 2    50   ~ 0
 PIN_TMS
 NoConn ~ 5900 6350
 Text Label 5750 6450 2    50   ~ 0
-PIN_SD2
+PIN_SD2_09
 Text Label 5750 6550 2    50   ~ 0
-PIN_CMD
+PIN_CMD_11
 Text Label 6550 6450 0    50   ~ 0
 PIN_TCK
 Text Label 6550 6550 0    50   ~ 0
@@ -132,7 +132,7 @@ F 3 "" H 8500 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 8500 6450 2    50   ~ 0
-PIN_TDO
+PIN_TDO_15
 Text Label 8500 6550 2    50   ~ 0
 PIN_SDO_07
 Wire Wire Line
@@ -140,11 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 5750 8500 5750
 Wire Wire Line
-	9300 6550 9150 6550
-Wire Wire Line
 	5900 6450 5750 6450
-Wire Wire Line
-	5750 6550 5900 6550
 $Comp
 L power:+5V #PWR0104
 U 1 1 5C5FB601
@@ -1685,14 +1681,10 @@ Text Label 12700 2600 0    50   ~ 0
 SW4_PIN
 Wire Wire Line
 	5750 6050 5900 6050
-Wire Wire Line
-	9150 6250 9650 6250
-Text Label 9650 6250 0    50   ~ 0
+Text Label 9850 6550 0    50   ~ 0
 JOY_X
-Text Label 8050 6450 2    50   ~ 0
+Text Label 5150 6550 2    50   ~ 0
 JOY_Y
-Wire Wire Line
-	8050 6450 8650 6450
 $Comp
 L Connector:Conn_01x01_Male J7
 U 1 1 5CC33613
@@ -2207,10 +2199,10 @@ F 3 "~" H 14450 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0175
 U 1 1 5CE73727
 P 14050 4100
-F 0 "#PWR?" H 14050 3850 50  0001 C CNN
+F 0 "#PWR0175" H 14050 3850 50  0001 C CNN
 F 1 "GND" V 14055 3972 50  0000 R CNN
 F 2 "" H 14050 4100 50  0001 C CNN
 F 3 "" H 14050 4100 50  0001 C CNN
@@ -2218,10 +2210,10 @@ F 3 "" H 14050 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0189
 U 1 1 5CE73845
 P 15050 4100
-F 0 "#PWR?" H 15050 3850 50  0001 C CNN
+F 0 "#PWR0189" H 15050 3850 50  0001 C CNN
 F 1 "GND" V 15055 3972 50  0000 R CNN
 F 2 "" H 15050 4100 50  0001 C CNN
 F 3 "" H 15050 4100 50  0001 C CNN
@@ -2300,4 +2292,12 @@ Wire Wire Line
 	9150 6450 9850 6450
 Wire Wire Line
 	8500 5650 8650 5650
+Wire Wire Line
+	9150 6550 9850 6550
+Wire Wire Line
+	9300 6250 9150 6250
+Wire Wire Line
+	5150 6550 5900 6550
+Wire Wire Line
+	8500 6450 8650 6450
 $EndSCHEMATC
