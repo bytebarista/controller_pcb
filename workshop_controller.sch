@@ -137,8 +137,6 @@ PIN_SDO_07
 Wire Wire Line
 	8500 6250 8650 6250
 Wire Wire Line
-	8650 5750 8500 5750
-Wire Wire Line
 	5900 6450 5750 6450
 $Comp
 L power:+5V #PWR0104
@@ -554,9 +552,9 @@ Text Label 14450 1800 2    50   ~ 0
 SPI_SDI
 Text Label 14450 1600 2    50   ~ 0
 SPI_SDO
-Text Label 6900 6150 0    50   ~ 0
-SPI_SDO
 Text Label 6900 6050 0    50   ~ 0
+SPI_SDO
+Text Label 6900 6150 0    50   ~ 0
 SPI_SDI
 Text Label 6900 5950 0    50   ~ 0
 SPI_SCL
@@ -717,11 +715,11 @@ Text Label 5050 8800 0    50   ~ 0
 SW3_PIN
 Text Label 5050 9150 0    50   ~ 0
 SW4_PIN
-Text Label 7000 5750 0    50   ~ 0
+Text Label 12700 2500 0    50   ~ 0
 SW1_PIN
 Wire Wire Line
 	6400 6250 6900 6250
-Text Label 12700 2500 0    50   ~ 0
+Text Label 12700 2600 0    50   ~ 0
 SW2_PIN
 Text Label 6900 5850 0    50   ~ 0
 PIN_DAC1
@@ -1557,9 +1555,9 @@ Text Label 12700 2300 0    50   ~ 0
 GPIO_EXT_2
 Text Label 12700 2400 0    50   ~ 0
 GPIO_EXT_3
-Text Label 12700 2600 0    50   ~ 0
-SW3_PIN
 Text Label 12700 2700 0    50   ~ 0
+SW3_PIN
+Text Label 12700 2800 0    50   ~ 0
 SW4_PIN
 Text Label 5200 5850 2    50   ~ 0
 JOY_X
@@ -2165,8 +2163,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 6250 5900 6250
 Wire Wire Line
-	6400 5750 7000 5750
-Wire Wire Line
 	9150 6050 9800 6050
 Wire Wire Line
 	5350 6050 5900 6050
@@ -2197,11 +2193,15 @@ NoConn ~ 6900 6550
 Wire Wire Line
 	7900 6450 8650 6450
 NoConn ~ 8500 5650
-NoConn ~ 8500 5750
 NoConn ~ 6550 5650
 Wire Wire Line
 	9150 6250 9650 6250
 NoConn ~ 8500 6550
 Wire Wire Line
 	8650 6550 8500 6550
+Wire Wire Line
+	8650 5750 8500 5750
+NoConn ~ 8500 5750
+Wire Wire Line
+	6400 5750 6550 5750
 $EndSCHEMATC
