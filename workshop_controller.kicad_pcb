@@ -3142,7 +3142,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD (layer B.Cu) (tedit 59FED5CC) (tstamp 5CE9C165)
-    (at 169.35 73.65 180)
+    (at 169.2 73.65 180)
     (descr "surface-mounted straight pin header, 2x10, 2.54mm pitch, double rows")
     (tags "Surface mounted pin header SMD 2x10 2.54mm double row")
     (path /5C5F462B)
