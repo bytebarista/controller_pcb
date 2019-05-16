@@ -2204,4 +2204,100 @@ Wire Wire Line
 NoConn ~ 8500 5750
 Wire Wire Line
 	6400 5750 6550 5750
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5CDDC6AB
+P 8550 8150
+F 0 "SW9" H 8550 8435 50  0000 C CNN
+F 1 "SW_Push" H 8550 8344 50  0000 C CNN
+F 2 "Hackheim_logo:contact_snes_button" H 8550 8350 50  0001 C CNN
+F 3 "" H 8550 8350 50  0001 C CNN
+	1    8550 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5CDDC6B2
+P 8550 8500
+F 0 "SW10" H 8550 8785 50  0000 C CNN
+F 1 "SW_Push" H 8550 8694 50  0000 C CNN
+F 2 "Hackheim_logo:contact_snes_button" H 8550 8700 50  0001 C CNN
+F 3 "" H 8550 8700 50  0001 C CNN
+	1    8550 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5CDDC6B9
+P 8550 8850
+F 0 "SW11" H 8550 9135 50  0000 C CNN
+F 1 "SW_Push" H 8550 9044 50  0000 C CNN
+F 2 "Hackheim_logo:contact_snes_button" H 8550 9050 50  0001 C CNN
+F 3 "~" H 8550 9050 50  0001 C CNN
+	1    8550 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5CDDC6C0
+P 8550 9200
+F 0 "SW12" H 8550 9485 50  0000 C CNN
+F 1 "SW_Push" H 8550 9394 50  0000 C CNN
+F 2 "Hackheim_logo:contact_snes_button" H 8550 9400 50  0001 C CNN
+F 3 "~" H 8550 9400 50  0001 C CNN
+	1    8550 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CDDC6C7
+P 8350 8150
+F 0 "#PWR0117" H 8350 7900 50  0001 C CNN
+F 1 "GND" V 8355 8022 50  0000 R CNN
+F 2 "" H 8350 8150 50  0001 C CNN
+F 3 "" H 8350 8150 50  0001 C CNN
+	1    8350 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5CDDC6CD
+P 8350 8500
+F 0 "#PWR0155" H 8350 8250 50  0001 C CNN
+F 1 "GND" V 8355 8372 50  0000 R CNN
+F 2 "" H 8350 8500 50  0001 C CNN
+F 3 "" H 8350 8500 50  0001 C CNN
+	1    8350 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 5CDDC6D3
+P 8350 8850
+F 0 "#PWR0168" H 8350 8600 50  0001 C CNN
+F 1 "GND" V 8355 8722 50  0000 R CNN
+F 2 "" H 8350 8850 50  0001 C CNN
+F 3 "" H 8350 8850 50  0001 C CNN
+	1    8350 8850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 5CDDC6D9
+P 8350 9200
+F 0 "#PWR0190" H 8350 8950 50  0001 C CNN
+F 1 "GND" V 8355 9072 50  0000 R CNN
+F 2 "" H 8350 9200 50  0001 C CNN
+F 3 "" H 8350 9200 50  0001 C CNN
+	1    8350 9200
+	0    1    1    0   
+$EndComp
+Text Label 8750 8150 0    50   ~ 0
+D_UP_PIN
+Text Label 8750 8500 0    50   ~ 0
+D_LEFT_PIN
+Text Label 8750 8850 0    50   ~ 0
+D_RIGHT_PIN
+Text Label 8750 9200 0    50   ~ 0
+D_DOWN_PIN
 $EndSCHEMATC
