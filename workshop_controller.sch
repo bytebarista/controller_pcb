@@ -20,7 +20,7 @@ U 1 1 5C5F462B
 P 6100 6050
 F 0 "J1" H 6150 6667 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 6150 6576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 6100 6050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 6100 6050 50  0001 C CNN
 F 3 "~" H 6100 6050 50  0001 C CNN
 	1    6100 6050
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5C5F4734
 P 8850 6050
 F 0 "J2" H 8900 6667 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 8900 6576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8850 6050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 8850 6050 50  0001 C CNN
 F 3 "~" H 8850 6050 50  0001 C CNN
 	1    8850 6050
 	1    0    0    -1  
@@ -255,7 +255,7 @@ U 1 1 5CA7AA74
 P 14650 1600
 F 0 "SPI_HEADER1" H 14677 1576 50  0000 L CNN
 F 1 "Conn_01x06_Female" H 14677 1485 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 14650 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left" H 14650 1600 50  0001 C CNN
 F 3 "~" H 14650 1600 50  0001 C CNN
 	1    14650 1600
 	1    0    0    -1  
@@ -276,9 +276,9 @@ $EndComp
 Wire Wire Line
 	14350 1050 14350 1400
 Text Label 14750 3650 0    50   ~ 0
-SPI_SDO
+SPI_MISO
 Text Label 14250 3650 2    50   ~ 0
-SPI_SDI
+SPI_MOSI
 Text Label 14250 3450 2    50   ~ 0
 SS_TFT
 Text Label 14750 3450 0    50   ~ 0
@@ -549,13 +549,13 @@ Wire Wire Line
 Text Label 14450 1700 2    50   ~ 0
 SPI_SCL
 Text Label 14450 1800 2    50   ~ 0
-SPI_SDI
+SPI_MOSI
 Text Label 14450 1600 2    50   ~ 0
-SPI_SDO
+SPI_MISO
 Text Label 6900 6050 0    50   ~ 0
-SPI_SDO
+SPI_MISO
 Text Label 6900 6150 0    50   ~ 0
-SPI_SDI
+SPI_MOSI
 Text Label 6900 5950 0    50   ~ 0
 SPI_SCL
 Wire Wire Line
@@ -1093,7 +1093,7 @@ U 1 1 5CB520FF
 P 10300 9900
 F 0 "I2C_HEADER1" H 10327 9876 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 10327 9785 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10300 9900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 10300 9900 50  0001 C CNN
 F 3 "~" H 10300 9900 50  0001 C CNN
 	1    10300 9900
 	1    0    0    -1  
@@ -1516,7 +1516,7 @@ U 1 1 5CBE6F06
 P 1500 6200
 F 0 "J6" H 1394 5775 50  0000 C CNN
 F 1 "Conn_01x05_Female" H 1394 5866 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 1500 6200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 1500 6200 50  0001 C CNN
 F 3 "~" H 1500 6200 50  0001 C CNN
 	1    1500 6200
 	-1   0    0    1   
