@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:workshop_controller-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -399,17 +399,6 @@ F 3 "~" H 11000 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
-U 1 1 5CB2F53A
-P 11200 7650
-F 0 "C2" H 11292 7696 50  0000 L CNN
-F 1 "100nF" H 11292 7605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11200 7650 50  0001 C CNN
-F 3 "~" H 11200 7650 50  0001 C CNN
-	1    11200 7650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0118
 U 1 1 5CB33AA1
 P 11100 7500
@@ -441,17 +430,6 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10100 5950 50  
 F 3 "~" H 10100 5950 50  0001 C CNN
 	1    10100 5950
 	0    1    1    0   
-$EndComp
-$Comp
-L Sensor:BME280 U2
-U 1 1 5CA64E9A
-P 11100 8350
-F 0 "U2" H 10670 8396 50  0000 R CNN
-F 1 "BME280" H 10670 8305 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 11100 8150 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 11100 8150 50  0001 C CNN
-	1    11100 8350
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	11100 7500 11000 7500
@@ -611,24 +589,13 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0129
 U 1 1 5CC4B76B
-P 11000 7800
-F 0 "#PWR0129" H 11000 7650 50  0001 C CNN
-F 1 "+3V3" V 11015 7928 50  0000 L CNN
-F 2 "" H 11000 7800 50  0001 C CNN
-F 3 "" H 11000 7800 50  0001 C CNN
-	1    11000 7800
+P 10900 7750
+F 0 "#PWR0129" H 10900 7600 50  0001 C CNN
+F 1 "+3V3" V 10915 7878 50  0000 L CNN
+F 2 "" H 10900 7750 50  0001 C CNN
+F 3 "" H 10900 7750 50  0001 C CNN
+	1    10900 7750
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0130
-U 1 1 5CC4C523
-P 11200 7800
-F 0 "#PWR0130" H 11200 7650 50  0001 C CNN
-F 1 "+3V3" V 11215 7928 50  0000 L CNN
-F 2 "" H 11200 7800 50  0001 C CNN
-F 3 "" H 11200 7800 50  0001 C CNN
-	1    11200 7800
-	0    1    1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0131
@@ -737,7 +704,7 @@ F 3 "" H 8150 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L workshop_controller-rescue:Micro_SD_Card-Connector J4
+L workshop_controller-rescue:Micro_SD_Card-Connector-workshop_controller-rescue J4
 U 1 1 5CCA02B7
 P 9050 1850
 F 0 "J4" H 9000 2567 50  0000 C CNN
@@ -866,7 +833,7 @@ Connection ~ 6900 2150
 Wire Wire Line
 	6900 2150 6900 2250
 Text Label 7600 1900 2    50   ~ 0
-SPI_SDO
+SPI_MOSI
 Wire Wire Line
 	7600 1900 7600 1750
 Connection ~ 7600 1750
@@ -886,7 +853,7 @@ $EndComp
 Wire Wire Line
 	8150 2250 7400 2250
 Text Label 7550 2100 0    50   ~ 0
-SPI_SDI
+SPI_MISO
 Text Label 5200 6250 2    50   ~ 0
 SS_SDCARD
 Wire Wire Line
@@ -2299,5 +2266,52 @@ D_LEFT_PIN
 Text Label 8750 8850 0    50   ~ 0
 D_RIGHT_PIN
 Text Label 8750 9200 0    50   ~ 0
+D_DOWN_PIN
+$Comp
+L power:+3V3 #PWR0130
+U 1 1 5CC4C523
+P 11350 7750
+F 0 "#PWR0130" H 11350 7600 50  0001 C CNN
+F 1 "+3V3" V 11350 7900 50  0000 L CNN
+F 2 "" H 11350 7750 50  0001 C CNN
+F 3 "" H 11350 7750 50  0001 C CNN
+	1    11350 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor:BME280 U2
+U 1 1 5CA64E9A
+P 11100 8350
+F 0 "U2" H 10670 8396 50  0000 R CNN
+F 1 "BME280" H 10670 8305 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 11100 8150 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 11100 8150 50  0001 C CNN
+	1    11100 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5CB2F53A
+P 11200 7650
+F 0 "C2" H 11292 7696 50  0000 L CNN
+F 1 "100nF" H 11292 7605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11200 7650 50  0001 C CNN
+F 3 "~" H 11200 7650 50  0001 C CNN
+	1    11200 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 7750 11350 7750
+Connection ~ 11200 7750
+Wire Wire Line
+	11000 7750 10900 7750
+Connection ~ 11000 7750
+Text Label 12700 1200 0    50   ~ 0
+D_UP_PIN
+Text Label 12700 1300 0    50   ~ 0
+D_LEFT_PIN
+Text Label 12700 1400 0    50   ~ 0
+D_RIGHT_PIN
+Text Label 12700 1500 0    50   ~ 0
 D_DOWN_PIN
 $EndSCHEMATC
