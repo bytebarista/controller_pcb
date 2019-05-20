@@ -8,7 +8,7 @@ F0 "U" 0 200 50 H V L CNN
 F1 "Amplifier_Operational_LM358" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6233 OPA2356xxD OPA2356xxDGK OPA1612AxD MC33172 OPA1602
+ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6234 OPA2356xxD OPA2356xxDGK OPA1612AxD MC33172 OPA1602 TLV2372 LT6237
 $FPLIST
  SOIC*3.9x4.9mm*P1.27mm*
  DIP*W7.62mm*
@@ -100,35 +100,6 @@ X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Conn_01x05_Female
-#
-DEF Connector_Conn_01x05_Female J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x05_Female" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
-A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-A 0 100 20 901 -901 1 1 6 N 0 120 0 80
-A 0 200 20 901 -901 1 1 6 N 0 220 0 180
-P 2 1 1 6 -50 -200 -20 -200 N
-P 2 1 1 6 -50 -100 -20 -100 N
-P 2 1 1 6 -50 0 -20 0 N
-P 2 1 1 6 -50 100 -20 100 N
-P 2 1 1 6 -50 200 -20 200 N
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -448,39 +419,6 @@ X SDA 9 -700 800 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# MicroSD_2201778-1
-#
-DEF MicroSD_2201778-1 J 0 40 Y Y 1 L N
-F0 "J" -501 631 50 H V L BNN
-F1 "MicroSD_2201778-1" -501 -671 50 H V L BNN
-F2 "TE_2201778-1" 0 0 50 H I L BNN
-F3 "TE Connectivity" 0 0 50 H I L BNN
-F4 "Manufacturer recommendations" 0 0 50 H I L BNN
-F5 "B" 0 0 50 H I L BNN
-DRAW
-P 2 0 0 10 -500 -600 500 -600 N
-P 2 0 0 10 -500 600 -500 -600 N
-P 2 0 0 10 500 -600 500 600 N
-P 2 0 0 10 500 600 -500 600 N
-X DAT2 1 -700 -200 200 R 40 40 0 0 B
-X SWB 10 700 0 200 L 40 40 0 0 P
-X GND 11 700 -400 200 L 40 40 0 0 W
-X GND 12 700 -400 200 L 40 40 0 0 W
-X GND 13 700 -400 200 L 40 40 0 0 W
-X GND 14 700 -400 200 L 40 40 0 0 W
-X GND 15 700 -400 200 L 40 40 0 0 W
-X GND 16 700 -400 200 L 40 40 0 0 W
-X CD/DAT3 2 -700 -300 200 R 40 40 0 0 B
-X CMD 3 -700 200 200 R 40 40 0 0 B
-X VDD 4 700 500 200 L 40 40 0 0 W
-X CLK 5 -700 400 200 R 40 40 0 0 I C
-X VSS 6 700 -500 200 L 40 40 0 0 W
-X DAT0 7 -700 0 200 R 40 40 0 0 B
-X DAT1 8 -700 -100 200 R 40 40 0 0 B
-X SWA 9 700 200 200 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
 # Sensor_BME280
 #
 DEF Sensor_BME280 U 0 40 Y Y 1 F N
@@ -594,11 +532,44 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# workshop_controller-rescue_APA102-GSG
+# workshop_controller-rescue_2201778-1-MicroSD
 #
-DEF workshop_controller-rescue_APA102-GSG D 0 40 Y Y 1 F N
+DEF workshop_controller-rescue_2201778-1-MicroSD J 0 40 Y Y 1 L N
+F0 "J" -501 631 50 H V L BNN
+F1 "workshop_controller-rescue_2201778-1-MicroSD" -501 -671 50 H V L BNN
+F2 "TE_2201778-1" 0 0 50 H I L BNN
+F3 "TE Connectivity" 0 0 50 H I L BNN
+F4 "Manufacturer recommendations" 0 0 50 H I L BNN
+F5 "B" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -500 -600 500 -600 N
+P 2 0 0 10 -500 600 -500 -600 N
+P 2 0 0 10 500 -600 500 600 N
+P 2 0 0 10 500 600 -500 600 N
+X DAT2 1 -700 -200 200 R 40 40 0 0 B
+X SWB 10 700 0 200 L 40 40 0 0 P
+X GND 11 700 -400 200 L 40 40 0 0 W
+X GND 12 700 -400 200 L 40 40 0 0 W
+X GND 13 700 -400 200 L 40 40 0 0 W
+X GND 14 700 -400 200 L 40 40 0 0 W
+X GND 15 700 -400 200 L 40 40 0 0 W
+X GND 16 700 -400 200 L 40 40 0 0 W
+X CD/DAT3 2 -700 -300 200 R 40 40 0 0 B
+X CMD 3 -700 200 200 R 40 40 0 0 B
+X VDD 4 700 500 200 L 40 40 0 0 W
+X CLK 5 -700 400 200 R 40 40 0 0 I C
+X VSS 6 700 -500 200 L 40 40 0 0 W
+X DAT0 7 -700 0 200 R 40 40 0 0 B
+X DAT1 8 -700 -100 200 R 40 40 0 0 B
+X SWA 9 700 200 200 L 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# workshop_controller-rescue_APA102-GSG-workshop_controller-rescue
+#
+DEF workshop_controller-rescue_APA102-GSG-workshop_controller-rescue D 0 40 Y Y 1 F N
 F0 "D" 0 200 60 H V C CNN
-F1 "workshop_controller-rescue_APA102-GSG" 0 -200 60 H V C CNN
+F1 "workshop_controller-rescue_APA102-GSG-workshop_controller-rescue" 0 -200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -612,11 +583,11 @@ X CKO 6 350 0 150 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4
+# workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4-workshop_controller-rescue
 #
-DEF workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4 U 0 40 Y Y 1 F N
+DEF workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4-workshop_controller-rescue U 0 40 Y Y 1 F N
 F0 "U" 400 400 60 H V C CNN
-F1 "workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4" 700 -500 60 H V C CNN
+F1 "workshop_controller-rescue_HackPackv4-rescue_PSP_1000_JSTK-HackPack4-workshop_controller-rescue" 700 -500 60 H V C CNN
 F2 "" 1300 -700 60 H I C CNN
 F3 "" 1300 -700 60 H I C CNN
 DRAW
@@ -628,11 +599,11 @@ X GND 4 0 -750 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# workshop_controller-rescue_Microphone4-bytebarista
+# workshop_controller-rescue_Microphone4-bytebarista-workshop_controller-rescue
 #
-DEF workshop_controller-rescue_Microphone4-bytebarista M 0 40 Y Y 1 F N
+DEF workshop_controller-rescue_Microphone4-bytebarista-workshop_controller-rescue M 0 40 Y Y 1 F N
 F0 "M" 0 0 50 H V C CNN
-F1 "workshop_controller-rescue_Microphone4-bytebarista" 0 0 50 H V C CNN
+F1 "workshop_controller-rescue_Microphone4-bytebarista-workshop_controller-rescue" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -643,11 +614,11 @@ X Signal 4 -250 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# workshop_controller-rescue_TPA6203A1-bytebarista
+# workshop_controller-rescue_TPA6203A1-bytebarista-workshop_controller-rescue
 #
-DEF workshop_controller-rescue_TPA6203A1-bytebarista U 0 40 Y Y 1 F N
+DEF workshop_controller-rescue_TPA6203A1-bytebarista-workshop_controller-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "workshop_controller-rescue_TPA6203A1-bytebarista" 0 0 50 H V C CNN
+F1 "workshop_controller-rescue_TPA6203A1-bytebarista-workshop_controller-rescue" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
