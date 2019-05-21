@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:workshop_controller-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -255,7 +255,7 @@ U 1 1 5CA7AA74
 P 14650 1600
 F 0 "SPI_HEADER1" H 14677 1576 50  0000 L CNN
 F 1 "Conn_01x06_Female" H 14677 1485 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal_SMD_Pin1Left" H 14650 1600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 14650 1600 50  0001 C CNN
 F 3 "~" H 14650 1600 50  0001 C CNN
 	1    14650 1600
 	1    0    0    -1  
@@ -921,7 +921,7 @@ U 1 1 5CB520FF
 P 10300 9900
 F 0 "I2C_HEADER1" H 10327 9876 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 10327 9785 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal_SMD_Pin1Left" H 10300 9900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 10300 9900 50  0001 C CNN
 F 3 "~" H 10300 9900 50  0001 C CNN
 	1    10300 9900
 	1    0    0    -1  
@@ -1386,7 +1386,7 @@ U 1 1 5CC33613
 P 4200 2400
 F 0 "J7" H 4306 2578 50  0000 C CNN
 F 1 "LOGO_TOUCH" H 4306 2487 50  0000 C CNN
-F 2 "Hackheim_logo:F.Cu_g9870" H 4200 2400 50  0001 C CNN
+F 2 "Hackheim_logo:LOGO_SMD" H 4200 2400 50  0001 C CNN
 F 3 "~" H 4200 2400 50  0001 C CNN
 	1    4200 2400
 	1    0    0    -1  
@@ -2468,7 +2468,7 @@ U 1 1 5CF685F6
 P 1400 6350
 F 0 "J6" H 1292 5825 50  0000 C CNN
 F 1 "Conn_01x06_Female" H 1292 5916 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal_SMD_Pin1Left" H 1400 6350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 1400 6350 50  0001 C CNN
 F 3 "~" H 1400 6350 50  0001 C CNN
 	1    1400 6350
 	-1   0    0    1   
