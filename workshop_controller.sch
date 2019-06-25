@@ -177,7 +177,7 @@ U 1 1 5CA64D58
 P 14700 8550
 F 0 "U1" H 14700 7564 50  0000 C CNN
 F 1 "MPU-9250" H 14700 7473 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 14700 7550 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_3x3mm_P0.4mm_EP1.75x1.6mm" H 14700 7550 50  0001 C CNN
 F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 14700 8400 50  0001 C CNN
 	1    14700 8550
 	1    0    0    -1  
@@ -920,7 +920,7 @@ U 1 1 5CB520FF
 P 10300 9900
 F 0 "I2C_HEADER1" H 10327 9876 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 10327 9785 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 10300 9900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 10300 9900 50  0001 C CNN
 F 3 "~" H 10300 9900 50  0001 C CNN
 	1    10300 9900
 	1    0    0    -1  
@@ -959,7 +959,7 @@ U 1 1 5CB65B9E
 P 2100 1150
 F 0 "U4" H 2005 1115 50  0000 C CNN
 F 1 "TPA6203A1" H 2005 1024 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 2100 1150 50  0001 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm" H 2100 1150 50  0001 C CNN
 F 3 "" H 2100 1150 50  0001 C CNN
 	1    2100 1150
 	1    0    0    -1  
@@ -1934,7 +1934,7 @@ F 3 "" H 5150 1350 50  0001 C CNN
 $EndComp
 Text Label 5300 1550 0    50   ~ 0
 PIN_DAC1
-Text Label 5150 1650 0    50   ~ 0
+Text Label 5300 1450 0    50   ~ 0
 PIN_DAC2
 $Comp
 L Connector:AudioJack4 J3
@@ -1947,15 +1947,6 @@ F 3 "~" H 4950 1450 50  0001 C CNN
 	1    4950 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 1550 5200 1550
-Wire Wire Line
-	5150 1450 5200 1450
-Wire Wire Line
-	5200 1450 5200 1550
-Connection ~ 5200 1550
-Wire Wire Line
-	5200 1550 5300 1550
 Wire Wire Line
 	5200 6250 5900 6250
 Wire Wire Line
@@ -2445,10 +2436,10 @@ F 3 "" H 13000 750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Female J6
+L Connector:Conn_01x06_Female GPIO_EX1
 U 1 1 5CF685F6
 P 1400 6350
-F 0 "J6" H 1292 5825 50  0000 C CNN
+F 0 "GPIO_EX1" H 1292 5825 50  0000 C CNN
 F 1 "Conn_01x06_Female" H 1292 5916 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 1400 6350 50  0001 C CNN
 F 3 "~" H 1400 6350 50  0001 C CNN
@@ -2514,4 +2505,15 @@ Wire Wire Line
 	10200 5950 10500 5950
 Wire Wire Line
 	10250 5700 10500 5700
+Wire Wire Line
+	5150 1550 5200 1550
+Wire Wire Line
+	5150 1450 5300 1450
+Wire Wire Line
+	5200 1550 5200 1650
+Wire Wire Line
+	5200 1650 5150 1650
+Connection ~ 5200 1550
+Wire Wire Line
+	5200 1550 5300 1550
 $EndSCHEMATC
