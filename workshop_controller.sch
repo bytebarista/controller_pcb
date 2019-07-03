@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:workshop_controller-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -758,7 +758,7 @@ SS_HEADER1
 Wire Wire Line
 	5350 6150 5900 6150
 $Comp
-L workshop_controller-rescue:Microphone4-bytebarista-workshop_controller-rescue M1
+L workshop_controller-rescue:Microphone4-bytebarista-workshop_controller-rescue-workshop_controller-rescue M1
 U 1 1 5CAD366A
 P 2150 9000
 F 0 "M1" H 2150 9125 50  0000 C CNN
@@ -803,17 +803,6 @@ F 3 "" H 2750 9100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9150 5850 9650 5850
-$Comp
-L Amplifier_Operational:LM358 U5
-U 1 1 5CADDFC8
-P 1800 8150
-F 0 "U5" H 1800 8517 50  0000 C CNN
-F 1 "LM358" H 1800 8426 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1800 8150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1800 8150 50  0001 C CNN
-	1    1800 8150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Amplifier_Operational:LM358 U5
 U 2 1 5CADE07F
@@ -954,7 +943,7 @@ I2C_SCK
 Wire Wire Line
 	11700 7950 11700 8050
 $Comp
-L workshop_controller-rescue:TPA6203A1-bytebarista-workshop_controller-rescue U4
+L workshop_controller-rescue:TPA6203A1-bytebarista-workshop_controller-rescue-workshop_controller-rescue U4
 U 1 1 5CB65B9E
 P 2100 1150
 F 0 "U4" H 2005 1115 50  0000 C CNN
@@ -1163,7 +1152,7 @@ $EndComp
 Wire Wire Line
 	3150 1100 3350 1100
 $Comp
-L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue D2
+L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue-workshop_controller-rescue D2
 U 1 1 5CBA7953
 P 2700 10400
 F 0 "D2" H 2700 10837 60  0000 C CNN
@@ -1196,7 +1185,7 @@ F 3 "" H 3050 10500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L workshop_controller-rescue:HackPackv4-rescue_PSP_1000_JSTK-HackPack4-workshop_controller-rescue U6
+L workshop_controller-rescue:HackPackv4-rescue_PSP_1000_JSTK-HackPack4-workshop_controller-rescue-workshop_controller-rescue U6
 U 1 1 5CBA7E0F
 P 1700 4150
 F 0 "U6" H 2027 4153 60  0000 L CNN
@@ -1239,7 +1228,7 @@ LED_DA
 Text Label 2350 10400 2    50   ~ 0
 LED_CLK
 $Comp
-L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue D1
+L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue-workshop_controller-rescue D1
 U 1 1 5CBD444B
 P 4200 10400
 F 0 "D1" H 4200 10837 60  0000 C CNN
@@ -1272,7 +1261,7 @@ F 3 "" H 4550 10500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue D3
+L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue-workshop_controller-rescue D3
 U 1 1 5CBDA35C
 P 5700 10400
 F 0 "D3" H 5700 10837 60  0000 C CNN
@@ -1305,7 +1294,7 @@ F 3 "" H 6050 10500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue D4
+L workshop_controller-rescue:APA102-GSG-workshop_controller-rescue-workshop_controller-rescue D4
 U 1 1 5CBE0299
 P 7300 10400
 F 0 "D4" H 7300 10837 60  0000 C CNN
@@ -1586,43 +1575,7 @@ Wire Wire Line
 	13950 3050 14250 3050
 Wire Wire Line
 	14750 2950 15100 2950
-$Comp
-L Device:R_Small R21
-U 1 1 5CC6E36C
-P 15200 2950
-F 0 "R21" V 15004 2950 50  0000 C CNN
-F 1 "0Ω" V 15095 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15200 2950 50  0001 C CNN
-F 3 "~" H 15200 2950 50  0001 C CNN
-	1    15200 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 5CC6F75E
-P 15200 2800
-F 0 "R20" V 15004 2800 50  0000 C CNN
-F 1 "0Ω" V 15095 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15200 2800 50  0001 C CNN
-F 3 "~" H 15200 2800 50  0001 C CNN
-	1    15200 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15100 2800 15100 2950
-Connection ~ 15100 2950
-$Comp
-L power:+3V3 #PWR0183
-U 1 1 5CC81ADC
-P 15300 2800
-F 0 "#PWR0183" H 15300 2650 50  0001 C CNN
-F 1 "+3V3" V 15315 2928 50  0000 L CNN
-F 2 "" H 15300 2800 50  0001 C CNN
-F 3 "" H 15300 2800 50  0001 C CNN
-	1    15300 2800
-	0    1    1    0   
-$EndComp
-Text Label 15300 2950 0    50   ~ 0
+Text Label 15100 2950 0    50   ~ 0
 CTP_RES
 Text Label 8150 6150 2    50   ~ 0
 CTP_RES
@@ -1776,17 +1729,6 @@ F 3 "" H 3150 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 8600 1650 8600
-$Comp
-L power:GND #PWR0188
-U 1 1 5CE44978
-P 1500 8050
-F 0 "#PWR0188" H 1500 7800 50  0001 C CNN
-F 1 "GND" V 1505 7922 50  0000 R CNN
-F 2 "" H 1500 8050 50  0001 C CNN
-F 3 "" H 1500 8050 50  0001 C CNN
-	1    1500 8050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1100 8250 1400 8250
 Wire Wire Line
@@ -1796,7 +1738,6 @@ Wire Wire Line
 	1400 8250 1500 8250
 Wire Wire Line
 	2100 8150 2100 8600
-Connection ~ 2100 8150
 Wire Wire Line
 	1100 8250 1100 9200
 $Comp
@@ -2127,7 +2068,7 @@ D_RIGHT_PIN
 Text Label 12700 1500 0    50   ~ 0
 D_DOWN_PIN
 $Comp
-L workshop_controller-rescue:2201778-1-MicroSD J4
+L workshop_controller-rescue:2201778-1-MicroSD-workshop_controller-rescue J4
 U 1 1 5CE17FBC
 P 9200 1750
 F 0 "J4" H 9200 2517 50  0000 C CNN
@@ -2516,4 +2457,159 @@ Wire Wire Line
 Connection ~ 5200 1550
 Wire Wire Line
 	5200 1550 5300 1550
+$Comp
+L Connector_Generic_MountingPin:Conn_01x14_MountingPin J6
+U 1 1 5D130F0B
+P 7500 3750
+F 0 "J6" H 7588 3664 50  0000 L CNN
+F 1 "Conn_01x14_MountingPin" H 7588 3573 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0148
+U 1 1 5D132608
+P 7300 3150
+F 0 "#PWR0148" H 7300 3000 50  0001 C CNN
+F 1 "+3V3" V 7315 3278 50  0000 L CNN
+F 2 "" H 7300 3150 50  0001 C CNN
+F 3 "" H 7300 3150 50  0001 C CNN
+	1    7300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0188
+U 1 1 5D133A2E
+P 7300 3250
+F 0 "#PWR0188" H 7300 3000 50  0001 C CNN
+F 1 "GND" V 7305 3122 50  0000 R CNN
+F 2 "" H 7300 3250 50  0001 C CNN
+F 3 "" H 7300 3250 50  0001 C CNN
+	1    7300 3250
+	0    1    1    0   
+$EndComp
+Text Label 6950 3350 2    50   ~ 0
+SS_TFT
+Wire Wire Line
+	6950 3350 7300 3350
+Text Label 6950 3450 2    50   ~ 0
+TFT_RESET
+Wire Wire Line
+	6950 3450 7300 3450
+Text Label 6950 3550 2    50   ~ 0
+TFT_DC
+Wire Wire Line
+	6950 3550 7300 3550
+Text Label 6950 3650 2    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	6950 3650 7300 3650
+Text Label 6950 3750 2    50   ~ 0
+SPI_SCL
+$Comp
+L power:+3V3 #PWR0194
+U 1 1 5D185E8E
+P 7300 3850
+F 0 "#PWR0194" H 7300 3700 50  0001 C CNN
+F 1 "+3V3" V 7315 3978 50  0000 L CNN
+F 2 "" H 7300 3850 50  0001 C CNN
+F 3 "" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 3750 6950 3750
+Text Label 6950 3950 2    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	6950 3950 7300 3950
+Text Label 6950 4050 2    50   ~ 0
+I2C_SCK
+Text Label 6950 4450 2    50   ~ 0
+CTP_IRQ
+Text Label 6950 4150 2    50   ~ 0
+CTP_RES
+Text Label 6950 4350 2    50   ~ 0
+SPI_MISO
+Text Label 6950 4250 2    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	6950 4050 7300 4050
+Wire Wire Line
+	7300 4150 6950 4150
+Wire Wire Line
+	6950 4250 7300 4250
+Wire Wire Line
+	7300 4350 6950 4350
+Wire Wire Line
+	6950 4450 7300 4450
+Connection ~ 2100 8150
+$Comp
+L Amplifier_Operational:LM358 U5
+U 1 1 5CADDFC8
+P 1800 8150
+F 0 "U5" H 1800 8517 50  0000 C CNN
+F 1 "LM358" H 1800 8426 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1800 8150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1800 8150 50  0001 C CNN
+	1    1800 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0195
+U 1 1 5D1F5652
+P 800 7600
+F 0 "#PWR0195" H 800 7450 50  0001 C CNN
+F 1 "+3V3" V 815 7728 50  0000 L CNN
+F 2 "" H 800 7600 50  0001 C CNN
+F 3 "" H 800 7600 50  0001 C CNN
+	1    800  7600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  7600 1050 7600
+$Comp
+L Device:R_Small R3
+U 1 1 5D203EF2
+P 1150 7600
+F 0 "R3" V 954 7600 50  0000 C CNN
+F 1 "?Ω" V 1045 7600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1150 7600 50  0001 C CNN
+F 3 "~" H 1150 7600 50  0001 C CNN
+	1    1150 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 7600 1500 7600
+Wire Wire Line
+	1500 7600 1500 8050
+Wire Wire Line
+	1500 7600 1700 7600
+Connection ~ 1500 7600
+$Comp
+L Device:R_Small R5
+U 1 1 5D21E51B
+P 1800 7600
+F 0 "R5" V 1604 7600 50  0000 C CNN
+F 1 "?Ω" V 1695 7600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 7600 50  0001 C CNN
+F 3 "~" H 1800 7600 50  0001 C CNN
+	1    1800 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0196
+U 1 1 5D282122
+P 2150 7600
+F 0 "#PWR0196" H 2150 7350 50  0001 C CNN
+F 1 "GND" V 2155 7472 50  0000 R CNN
+F 2 "" H 2150 7600 50  0001 C CNN
+F 3 "" H 2150 7600 50  0001 C CNN
+	1    2150 7600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 7600 1900 7600
 $EndSCHEMATC
