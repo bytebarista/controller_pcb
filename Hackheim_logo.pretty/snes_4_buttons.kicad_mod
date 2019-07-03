@@ -1,0 +1,11 @@
+(module snes_4_buttons (layer F.Cu) (tedit 5CD02F57)
+  (descr "Imported from snes_layout_buttons.svg")
+  (tags svg2mod)
+  (attr smd)
+  (fp_text reference svg2mod (at 0 -3.048) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3048)))
+  )
+  (fp_text value G*** (at 0 3.048) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3048)))
+  )
+)
